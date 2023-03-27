@@ -3,4 +3,4 @@
 import "flowbite";
 
 // Import Our CSS
-import "../css/main.css";
+import "../css/input.css";
