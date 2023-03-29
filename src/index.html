@@ -21,7 +21,7 @@
     <title>Pocheon Data Center | 포천데이터센터</title>
   </head>
   <body class="bg-gray-900 text-white relative">
-    <header class="fixed w-full z-10">
+    <header class="fixed w-full z-10" data-scroll>
       <nav class="section px-2 sm:px-4 py-2.5 rounded">
         <div class="flex flex-wrap items-center justify-between">
           <a href="#" class="flex items-center py-3">
@@ -349,7 +349,7 @@
               Pocheon <br />
               DataCenter
             </h1>
-            <p class="text-xl tracking-tighter">
+            <p class="text-xl tracking-tighter sub-title">
               포천데이터센터에 오신 것을 환영합니다.
             </p>
             <div class="mt-5">
@@ -367,12 +367,13 @@
       <section
         class="section section-main h-screen flex items-center"
         id="about"
+        data-scroll
       >
         <div class="">
-          <h1 class="text-7xl tracking-tighter font-semibold">
+          <h1 class="text-7xl tracking-tighter font-semibold" data-scroll>
             포천데이터센터란?
           </h1>
-          <div class="w-8/12">
+          <div class="w-8/12" data-scroll>
             <p class="my-4">
               글로벌 트렌드에 앞장서는 최첨단 기술과 데이터를 안전하게 보호하고
               자연을 생각하는 친환경적인 운영방식으로 최상의 IDC 서비스 제공하고
@@ -393,7 +394,7 @@
       <!-- Location -->
       <section class="section section-main h-screen" id="location">
         <!-- Description Data Center Features -->
-        <div class="flex items-center">
+        <div class="flex items-center" data-scroll>
           <div class="grid grid-cols-3 gap-x-2 gap-y-10">
             <!-- Item 1-->
             <div class="flex items-start">
@@ -548,7 +549,7 @@
         </div>
       </section>
       <!-- Building Feature and Description -->
-      <section class="section section-main w-72 h-screen">
+      <section class="section section-main w-72 h-screen" id="building-section">
         <div class="grid grid-cols-1 gap-5">
           <!-- Item 1 -->
           <div
@@ -929,5 +930,6 @@
     <script src="../src/js/main.js"></script>
     <script src="../src/js/anime.js"></script>
     <script src="../src/js/typeit.js"></script>
+    <script src="../src/js/rellax.js"></script>
   </body>
 </html>

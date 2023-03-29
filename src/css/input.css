@@ -25,3 +25,13 @@
 .nav-dropdown-link {
   @apply block px-4 py-2 hover:bg-gray-500/20;
 }
+
+[data-scroll] {
+  transition: opacity 1s;
+}
+[data-scroll="in"] {
+  opacity: 1;
+}
+[data-scroll="out"] {
+  opacity: 0;
+}

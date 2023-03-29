@@ -29,7 +29,11 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.7",
+    "animejs": "^3.2.1",
     "flowbite": "^1.6.4",
-    "swiper": "^9.1.1"
+    "rellax": "^1.12.1",
+    "scroll-out": "^2.2.12",
+    "swiper": "^9.1.1",
+    "typeit": "^8.7.1"
   }
 }
