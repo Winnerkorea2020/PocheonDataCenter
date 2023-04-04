@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <!-- Font CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Icon Css -->
+
+    <!-- FlowBite  -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <title>Pocheon Data Center | 포천데이터센터</title>
+  </head>
+  <body class="bg-zinc-950">
+    <!-- Header Section : Begin-->
+    <header class="fixed top-0 left-0 w-full h-16 px-10">
+      <!-- Navigation Bar : Begin -->
+      <nav class="flex justify-between items-center">
+        <div class="tracking-tighter">
+          <h4 class="text-3xl font-thin text-gray-300">Pocheon Data Center</h4>
+          <p class="">포천데이터센터</p>
+        </div>
+        <div class="flex justify-between items-center text-gray-300">
+          <ul class="flex justify-between items-center gap-x-5">
+            <li class="py-2 text-sm hover:text-gray-50 hover:font-semibold">
+              <a href="#" class="block px-4 py-2">포천데이터 센터</a>
+            </li>
+            <!-- DropDown Menu : Begin -->
+            <li>
+              <button
+                id="dropdownDividerButton"
+                data-dropdown-toggle="dropdownDivider"
+                class="hover:text-gray-50 hover:font-semibold text-sm px-4 py-2.5 text-center inline-flex items-center"
+                type="button"
+              >
+                데이터센터
+              </button>
+
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownDivider"
+                class="z-10 hidden divide-y divide-gray-300 rounded-lg shadow w-44 bg-gray-900"
+              >
+                <div class="py-2 text-sm">
+                  <a
+                    href="datacenter.html"
+                    class="block px-4 py-2 hover:text-gray-50 hover:font-semibold"
+                    >데이터센터란?</a
+                  >
+                </div>
+                <ul
+                  class="py-2 text-sm"
+                  aria-labelledby="dropdownDividerButton"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:text-gray-50 hover:font-semibold"
+                      >인프라</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:text-gray-50 hover:font-semibold"
+                      >트랜드</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- DropDown Menu : End -->
+            <li class="py-2 text-sm hover:text-gray-50 hover:font-semibold">
+              <a href="#" class="block px-4 py-2 hover:bg-gray300">서비스</a>
+            </li>
+          </ul>
+          <!-- Flag : Begin -->
+          <div>
+            <div class="flex items-center md:order-2">
+              <button
+                type="button"
+                data-dropdown-toggle="language-dropdown-menu"
+                class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm rounded-lg cursor-pointer"
+              >
+                <svg
+                  class="w-5 h-5 mr-2 rounded-full"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 3900 3900"
+                >
+                  <path fill="#b22234" d="M0 0h7410v3900H0z" />
+                  <path
+                    d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0"
+                    stroke="#fff"
+                    stroke-width="300"
+                  />
+                  <path fill="#3c3b6e" d="M0 0h2964v2100H0z" />
+                  <g fill="#fff">
+                    <g id="d">
+                      <g id="c">
+                        <g id="e">
+                          <g id="b">
+                            <path
+                              id="a"
+                              d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"
+                            />
+                            <use xlink:href="#a" y="420" />
+                            <use xlink:href="#a" y="840" />
+                            <use xlink:href="#a" y="1260" />
+                          </g>
+                          <use xlink:href="#a" y="1680" />
+                        </g>
+                        <use xlink:href="#b" x="247" y="210" />
+                      </g>
+                      <use xlink:href="#c" x="494" />
+                    </g>
+                    <use xlink:href="#d" x="988" />
+                    <use xlink:href="#c" x="1976" />
+                    <use xlink:href="#e" x="2470" />
+                  </g>
+                </svg>
+                English (US)
+              </button>
+              <!-- Dropdown -->
+              <div
+                class="z-50 hidden my-4 text-base list-none divide-y divide-gray-100 rounded-lg shadow"
+                id="language-dropdown-menu"
+              >
+                <ul class="py-2 font-medium" role="none">
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-500 hover:text-gray-50 hover:font-semibold"
+                      role="menuitem"
+                    >
+                      <div class="inline-flex items-center">
+                        <svg
+                          aria-hidden="true"
+                          class="h-3.5 w-3.5 rounded-full mr-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          id="flag-icon-css-us"
+                          viewBox="0 0 512 512"
+                        >
+                          <g fill-rule="evenodd">
+                            <g stroke-width="1pt">
+                              <path
+                                fill="#bd3d44"
+                                d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
+                                transform="scale(3.9385)"
+                              />
+                              <path
+                                fill="#fff"
+                                d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
+                                transform="scale(3.9385)"
+                              />
+                            </g>
+                            <path
+                              fill="#192f5d"
+                              d="M0 0h98.8v70H0z"
+                              transform="scale(3.9385)"
+                            />
+                            <path
+                              fill="#fff"
+                              d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z"
+                              transform="scale(3.9385)"
+                            />
+                          </g>
+                        </svg>
+                        English (US)
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-500 hover:text-gray-50 hover:font-semibold"
+                      role="menuitem"
+                    >
+                      <div class="inline-flex items-center">
+                        <svg
+                          class="h-3.5 w-3.5 rounded-full mr-2"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          id="flag-icon-css-de"
+                          viewBox="0 0 512 512"
+                        >
+                          <path fill="#ffce00" d="M0 341.3h512V512H0z" />
+                          <path d="M0 0h512v170.7H0z" />
+                          <path fill="#d00" d="M0 170.7h512v170.6H0z" />
+                        </svg>
+                        Deutsch
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-500 hover:text-gray-50 hover:font-semibold"
+                      role="menuitem"
+                    >
+                      <div class="inline-flex items-center">
+                        <svg
+                          class="h-3.5 w-3.5 rounded-full mr-2"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          id="flag-icon-css-it"
+                          viewBox="0 0 512 512"
+                        >
+                          <g fill-rule="evenodd" stroke-width="1pt">
+                            <path fill="#fff" d="M0 0h512v512H0z" />
+                            <path fill="#009246" d="M0 0h170.7v512H0z" />
+                            <path fill="#ce2b37" d="M341.3 0H512v512H341.3z" />
+                          </g>
+                        </svg>
+                        Italiano
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-500 hover:text-gray-50 hover:font-semibold"
+                      role="menuitem"
+                    >
+                      <div class="inline-flex items-center">
+                        <svg
+                          class="h-3.5 w-3.5 rounded-full mr-2"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          id="flag-icon-css-cn"
+                          viewBox="0 0 512 512"
+                        >
+                          <defs>
+                            <path
+                              id="a"
+                              fill="#ffde00"
+                              d="M1-.3L-.7.8 0-1 .6.8-1-.3z"
+                            />
+                          </defs>
+                          <path fill="#de2910" d="M0 0h512v512H0z" />
+                          <use
+                            width="30"
+                            height="20"
+                            transform="matrix(76.8 0 0 76.8 128 128)"
+                            xlink:href="#a"
+                          />
+                          <use
+                            width="30"
+                            height="20"
+                            transform="rotate(-121 142.6 -47) scale(25.5827)"
+                            xlink:href="#a"
+                          />
+                          <use
+                            width="30"
+                            height="20"
+                            transform="rotate(-98.1 198 -82) scale(25.6)"
+                            xlink:href="#a"
+                          />
+                          <use
+                            width="30"
+                            height="20"
+                            transform="rotate(-74 272.4 -114) scale(25.6137)"
+                            xlink:href="#a"
+                          />
+                          <use
+                            width="30"
+                            height="20"
+                            transform="matrix(16 -19.968 19.968 16 256 230.4)"
+                            xlink:href="#a"
+                          />
+                        </svg>
+                        中文 (繁體)
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Flag : End -->
+        </div>
+      </nav>
+    </header>
+    <main class="block">
+      <!-- Cover Section : Begin -->
+      <section
+        class="bg-gray-950 opacity-40 absolute w-full top-0 bottom-0 left-0 right-0 -z-10"
+      >
+        <div class="w-full h-full">
+          <img
+            src="https://images.unsplash.com/photo-1534996858221-380b92700493?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80"
+            alt=""
+            class="object-cover w-full h-full"
+          />
+        </div>
+      </section>
+      <!-- Infra Hero : Begin -->
+      <section class="section section-1">
+        <div class="flex items-center h-full">
+          <div class="tracking-tighter">
+            <h1 class="text-7xl font-bold">인프라</h1>
+
+            <p class="mt-5 text-lg">
+              &nbsp; 오늘날의 세계는 통신케이블로 전체가 연결되어 있습니다. 모든
+              IT기반의 일들은 이러한 통신망과 데이터센터를 거치게 된다고 보시면
+              됩니다. 데이터 센터는 = 서버, 즉 컴퓨터를 위한 집이라고 보면
+              됩니다.
+            </p>
+
+            <h3 class="mt-5 text-3xl">
+              데이터센터의 중요한 인프라 기반시설의 요구사항
+            </h3>
+
+            <p class="mt-5 text-lg">
+              &nbsp; 기반시설은 일반적으로 전력 및 통신을 공급하는 전기실 UPS 및
+              배터리실, 그리고 발전기 등과 기계실, 항온항습기, 냉동기 등의
+              기계설비로 구성이 되며 이 전체를 운영하는 종합상황실, 네트워크 및
+              보안 관리실 등으로 구성됩니다.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Infra Hero : End -->
+      <!-- Infra Feature : Begin -->
+      <section class="section section-3">
+        <div class="h-full w-full">
+          <div class="w-full py-20">
+            <div class="">
+              <!-- ITEM 1 -->
+              <div class="mt-72">
+                <div class="tracking-tighter">
+                  <h2 class="text-5xl font-bold">1. Stability</h2>
+                  <p class="mt-4 text-lg">
+                    각 기반시설별로 이중화 수준을 정해서 TIER라는 안정성 지표를
+                    만듬
+                  </p>
+                </div>
+                <div class="">
+                  <div class="py-4">
+                    <h4
+                      class="text-2xl font-semibold tracking-tighter pb-4 divide-y-2 border-b my-5"
+                    >
+                      각 기반시설별로 이중화 수준을 정해서 TIER라는 안정성
+                      지표를 만듬
+                    </h4>
+                    <p class="text-lg tracking-tighter">
+                      각 기반시설별로 이중화 수준을 정해서 TIER라는 안정성
+                      지표를 만듬 TIER1 에서 TIER4로 갈수록 안정적이고 신뢰도
+                      향상 높지만 비용이 증가하게 됩니다. TIER4는 완전 무중단
+                      운영이 가능합니다. TIER3는 운영하면서 유지보수가 가능하기
+                      때문에 운영에 문제가 없는 수준입니다.
+                    </p>
+                  </div>
+                  <div class="py-5">
+                    <h4
+                      class="text-2xl font-semibold tracking-tighter pb-4 divide-y-2 border-b my-5"
+                    >
+                      이중화 시설 / 정전대응 시나리오
+                    </h4>
+                    <p class="text-lg tracking-tighter">
+                      전력 이중화의 핵심 장비는 바로 UPS UPS란? 무정전 전원장치,
+                      전력공급 중단 후 발전기, 배터리 전력을 무중단으로 공급,
+                      2N구성 - 비상발전기 : 한전 상용전원 공급 중단 시,
+                      비상발전기가 가동하여 전력 공급 발전기가 정상 가동 될 대는
+                      시간이 소요됨으로 이 경우 Battery가 전력공급 역할을 한다.
+                      - Battery : 발전기 가동시까지의 전력 공급
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- ITEM 2 -->
+              <div class="mt-72">
+                <div class="tracking-tighter">
+                  <h2 class="text-5xl font-bold">2. Security</h2>
+                  <p class="mt-4 text-lg">
+                    각 기반시설별로 이중화 수준을 정해서 TIER라는 안정성 지표를
+                    만듬
+                  </p>
+                </div>
+                <div class="">
+                  <div class="py-4">
+                    <h4
+                      class="text-2xl font-semibold tracking-tighter pb-4 divide-y-2 border-b my-5"
+                    >
+                      데이터센터에 중요한 인프라 기반시설의 요구사항
+                    </h4>
+                    <p class="text-lg tracking-tighter">
+                      여러 단계의 다양한 장비를 거쳐서 보안 체크하게 됩니다.
+                      최근에는 코로나 이슈 때문에 비접촉 지문인식, 안면인식을
+                      주로 사용되는 편입니다. 보통 건물들의 보안이 제일 많이
+                      깨지는 경우가 권한이 있는 직원들의 뒤를 따라가는
+                      방법인데요 이러한 방법을 Tailgating이라고 부릅니다. 그래서
+                      데이터센터에 특수하게 적용하는 것이 Anti-tailgating
+                      (뒤따름 방지문) 입니다. 한 명씩만 항상 통과하도록 되어
+                      있고 무게 인식까지 가능하기 때문에 보안사고를 막아주는
+                      첨단 시스템입니다.
+                    </p>
+                  </div>
+                  <div class="py-5">
+                    <h4
+                      class="text-2xl font-semibold tracking-tighter pb-4 divide-y-2 border-b my-5"
+                    >
+                      종합상황실, 네트워크 및 보안 관리실
+                    </h4>
+                    <p class="text-lg tracking-tighter">
+                      기반시설은 일반적으로 전력 및 통신을 공급하는 전기실 UPS
+                      및 배터리실, 그리고 발전기 등과 기계실, 항온항습기, 냉동기
+                      등의 기계설비로 구성이 되며 이 전체를 운영하는 종합상황실,
+                      네트워크 및 보안 관리실 등으로 구성됩니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- ITEM 3 -->
+              <div class="mt-72">
+                <div class="tracking-tighter">
+                  <h2 class="text-5xl font-bold">3. Energy Saving</h2>
+                  <p class="mt-4 text-lg">
+                    데이터센터 = 전기먹는 하마??? 라는 표현을 많이 합니다.
+                    심지어 혹자는 인터넷 검색을 한번 하게 되면 스타벅스 커피한잔
+                    비용이 들어간다고 말하는 사람도 있습니다. 실제로 에너지
+                    절감은 데이터센터를 운영하는 비용과도 밀접한 관계가 있기
+                    때문에 에너지절감 이슈는 굉장히 중요합니다.
+                  </p>
+                </div>
+                <div class="">
+                  <div class="py-4">
+                    <h4
+                      class="text-2xl font-semibold tracking-tighter pb-4 divide-y-2 border-b my-5"
+                    >
+                      Power Usage Effectiveness(PUE)
+                    </h4>
+                    <p class="text-lg tracking-tighter">
+                      데이터센터만의 에너지 효율 지표를 별도로 가지고 있는데요.
+                      이것을 에너지 효율 지표 = PUE (Powet Usage Effectiveness)
+                      입니다. IT가 사용하는 전력은 반드시 들어가야 되는 장비이기
+                      때문에 기타 전력에 사용되는 전력을 줄여주는 것이 굉장히
+                      중요하게 됩니다. PUE를 절감하는 여러가지 방법들이
+                      있는데요. 그 중에서도 많은 기술들이 바로 기계분야,
+                      IT장비의 쿨링에 관련된 기술입니다. ASHRAE
+                      (미국냉난방공조학회) The American Society of Heating,
+                      Refrigerating and Air-Conditioning Engineers 자료에 의하면
+                      IT장비를 제외한 기타 전력의 80%를 IT장비 쿨링에 사용하게
+                      됩니다.
+                    </p>
+                    <p class="text-lg tracking-tighter mt-5">
+                      그렇기 때문에 글로벌데이터센터의 경우 위도가 높은
+                      추운지방에 데이터센터를 배치해 주변에 차가운 자연환경을
+                      적극 이용해서 냉각하는 기술을 사용하고 있습니다.
+                      우리나라는 지리적 환경 때문에 제한이 있지만 다양한 기술을
+                      사용해서 에너지절감을 하고자 하는 노력을 하고 있습니다.
+                    </p>
+                  </div>
+                  <div class="py-5">
+                    <h4
+                      class="text-2xl font-semibold tracking-tighter pb-4 divide-y-2 border-b my-5"
+                    >
+                      다양한 냉각 방식
+                    </h4>
+                    <p class="text-lg tracking-tighter">
+                      전력부하 밀도에 따른 여러가지 냉각 방식의 아이디어가
+                      나와있는데요.
+                    </p>
+                    <p class="text-lg tracking-tighter mt-5">
+                      첫번째, 외기집적 방식 : 겨울철이나 간절기에 서늘한 공기를
+                      온습도만 조절해서 바로 전산기계실에 공급하여 서버를
+                      냉각하는 방식 공기를 이용하는 방법 중에서는 외기 직접
+                      방식이 가장 효율이 높습니다.
+                    </p>
+                    <p class="text-lg tracking-tighter mt-5">
+                      그러나 황사나 염해, 미세먼지 등 외부 대기 환경에 민감한
+                      특징이 있습니다. 그래서 이런 단점을 좀 극복하고자 나온
+                      방식이 직접 넣지는 않고 실내와 외부공기를 열교환만 하는
+                      방식입니다. 두번째, 외기간접 방식 : 내부에 들어온 공기는
+                      히트파이프나 판형 열교환기를 통해 차가움만 전달하고 더워진
+                      상태로 다시 배출이 됩니다. 외기 직접 방식과 비슷한 효과를
+                      낼 수는 있지만 외부 대기환경에 따라서 필터를 자주
+                      교체해줘야 합니다.
+                    </p>
+                    <p class="text-lg tracking-tighter mt-5">
+                      최근에 많이 사용되는 프리쿨링 냉동기 방식도
+                      있는데요.공기와 물을 활용한 방식으로 세번째, 프리쿨링
+                      냉동기 방식 : 외부에 프리쿨링 코일을 노출시켜 차가운
+                      공기로 만들어진 냉수를 항온항습기에 공급하는 방식
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Infra Descripition : End -->
+    </main>
+    <footer></footer>
+
+    <!-- Javascript -->
+    <!-- Flow Bite : Begin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+    <!-- Flow Bite : End-->
+  </body>
+</html>

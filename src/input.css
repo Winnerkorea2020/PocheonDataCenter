@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 글자사이트 표준 14px */
+body {
+  @apply bg-black text-gray-400 text-sm;
+}
+
+.section {
+  @apply container mx-auto;
+}
+
+.section-1 {
+  @apply h-screen max-w-5xl px-32;
+}
+
+.section-2 {
+  @apply h-screen w-full px-10;
+}
+
+.section-3 {
+  @apply h-screen max-w-5xl px-24;
+}
+
+.main-title {
+  @apply text-8xl;
+}
+
+.sub-title {
+  @apply text-5xl;
+}
+
+.item-list-title {
+  @apply text-xl;
+}
+
+.item-list-description {
+  @apply pt-5 text-start text-base font-bold;
+}
