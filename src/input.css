@@ -4,7 +4,7 @@
 
 /* 글자사이트 표준 14px */
 body {
-  @apply bg-black text-gray-400 text-sm;
+  @apply bg-black text-gray-50 text-lg font-thin;
 }
 
 .section {
@@ -23,8 +23,20 @@ body {
   @apply h-screen w-full px-10;
 }
 
+.section-2-h-full {
+  @apply h-full w-full px-32;
+}
+
+.section-3-h-full {
+  @apply h-full max-w-5xl px-24;
+}
+
 .section-3 {
   @apply h-screen max-w-5xl px-24;
+}
+
+.section-4 {
+  @apply h-screen max-w-6xl px-24;
 }
 
 .main-title {
