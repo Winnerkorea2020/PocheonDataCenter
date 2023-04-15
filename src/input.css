@@ -4,7 +4,11 @@
 
 /* 글자사이트 표준 14px */
 body {
+<<<<<<< Updated upstream
   @apply bg-black text-gray-50 text-lg font-thin;
+=======
+  @apply bg-zinc-950 text-gray-50 text-lg font-thin relative;
+>>>>>>> Stashed changes
 }
 
 .section {
@@ -27,24 +31,67 @@ body {
   @apply h-full w-full px-32;
 }
 
+<<<<<<< Updated upstream
 .section-3-h-full {
   @apply h-full max-w-5xl px-24;
 }
 
+=======
+>>>>>>> Stashed changes
 .section-3 {
   @apply h-screen max-w-5xl px-24;
 }
 
+<<<<<<< Updated upstream
 .section-4 {
   @apply h-screen max-w-6xl px-24;
 }
 
 .main-title {
   @apply text-8xl;
+=======
+.section-3-h-full {
+  @apply h-full max-w-5xl px-24;
+}
+.section-4 {
+  @apply h-screen max-w-6xl px-24;
+}
+.section-4-h-full {
+  @apply h-full max-w-6xl px-24;
+>>>>>>> Stashed changes
 }
 
-.sub-title {
-  @apply text-5xl;
+/* ==================== title ======================== */
+.title-1 {
+  @apply text-8xl tracking-tighter font-bold;
+}
+
+.title-2 {
+  @apply text-5xl tracking-tighter font-bold;
+}
+
+.title-3 {
+  @apply text-3xl tracking-tighter font-bold;
+}
+
+.title-4 {
+  @apply text-xl tracking-tighter font-bold;
+}
+
+.description-1 {
+  @apply text-xl;
+}
+
+.description-2 {
+  @apply text-lg;
+}
+
+.description-3 {
+  @apply text-base;
+}
+
+.description-small {
+  @apply text-xs;
 }
 
 .item-list-title {
@@ -53,4 +100,50 @@ body {
 
 .item-list-description {
   @apply pt-5 text-start text-base font-bold;
+}
+/* ==================== nav ======================== */
+
+.nav {
+  @apply flex justify-between items-center px-2 xl:px-10;
+}
+
+.nav-content {
+  @apply basis-1/2;
+}
+ad .nav-logo {
+  @apply tracking-tighter;
+}
+
+.nav-title {
+  @apply text-3xl font-thin text-gray-50;
+}
+
+.nav-title-description {
+  @apply text-sm;
+}
+
+.nav-menu {
+  @apply flex justify-end flex-col items-center gap-12;
+}
+
+.nav-list {
+  @apply tracking-tighter;
+}
+
+.nav-link {
+  @apply text-sm py-2 px-4 hover:text-blue-600 block cursor-pointer;
+}
+
+.nav-description {
+  @apply text-sm;
+}
+
+/* ==================== national ======================== */
+
+.nation-list {
+  @apply block;
+}
+
+.nation-flag {
+  @apply w-5  mr-2 object-cover object-center;
 }
