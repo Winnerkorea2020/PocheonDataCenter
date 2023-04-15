@@ -4,11 +4,15 @@
 
 /* 글자사이트 표준 14px */
 body {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   @apply bg-black text-gray-50 text-lg font-thin;
 =======
   @apply bg-zinc-950 text-gray-50 text-lg font-thin relative;
 >>>>>>> Stashed changes
+=======
+  @apply bg-black text-gray-400 text-sm;
+>>>>>>> parent of d0284b2 (Create)
 }
 
 .section {
@@ -27,6 +31,7 @@ body {
   @apply h-screen w-full px-10;
 }
 
+<<<<<<< HEAD
 .section-2-h-full {
   @apply h-full w-full px-32;
 }
@@ -38,15 +43,20 @@ body {
 
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of d0284b2 (Create)
 .section-3 {
   @apply h-screen max-w-5xl px-24;
 }
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 .section-4 {
   @apply h-screen max-w-6xl px-24;
 }
 
+=======
+>>>>>>> parent of d0284b2 (Create)
 .main-title {
   @apply text-8xl;
 =======
