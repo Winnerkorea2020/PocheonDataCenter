@@ -344,7 +344,7 @@
       </section>
       <!-- Infra Hero : Begin -->
       <section class="section section-1-h-full">
-        <div class="pt-64 pb-96">
+        <div class="h-full">
           <div class="tracking-tighter">
             <h1 class="text-7xl font-bold">Service</h1>
 
@@ -380,13 +380,65 @@
               </p>
             </div>
           </div>
+          <div class="swiper itemImgSwiper h-96 w-full my-5">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="relative w-full">
+                  <img
+                    src="https://img.freepik.com/free-vector/futuristic-ai-technology-template-vector-disruptive-technology-blog-banner_53876-112231.jpg?t=st=1681194514~exp=1681195114~hmac=6ebc47d42e3e7d171fdb22bd24607dd86908ee9086842570465c73c45fda7a45"
+                    alt=""
+                    class="object-fill object-center w-full bg-center"
+                  />
+                  <div class="absolute top-0 left-0 p-10">
+                    <h3 class="text-3xl font-semibold">AI</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="relative w-full">
+                  <img
+                    src="https://img.freepik.com/free-photo/gps-system-smart-car_53876-105375.jpg?t=st=1681194650~exp=1681195250~hmac=c0aba2c1ac59584f722d8ae90eac6de258cc1aeb6a2d7eebcd94d1b389b606cd"
+                    alt=""
+                    class="object-fill object-center w-full bg-center"
+                  />
+                  <div class="absolute top-0 left-0 p-10">
+                    <h3 class="text-3xl font-semibold">Auto Driving</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="relative w-full">
+                  <img
+                    src="https://img.freepik.com/premium-photo/human-wearing-vr-glasses-looking-hologram-city_152359-1025.jpg"
+                    alt=""
+                    class="object-fill object-center w-full bg-center"
+                  />
+                  <div class="absolute top-0 left-0 p-10">
+                    <h3 class="text-3xl font-semibold">VR</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="relative w-full">
+                  <img
+                    src="https://img.freepik.com/premium-photo/automation-factory-concept-with-3d-rendering-robotic-arm-factory_493806-3552.jpg?w=740"
+                    alt=""
+                    class="object-fill object-center w-full bg-center"
+                  />
+                  <div class="absolute top-0 left-0 p-10">
+                    <h3 class="text-3xl font-semibold">Robot</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Infra Hero : End -->
 
       <!-- Furture Section 1 : Begin -->
-      <section class="section section-1-h-full">
-        <div class="py-96">
+      <section class="section section-1">
+        <div class="h-full flex items-center">
           <div class="tracking-tighter">
             <h1 class="text-7xl font-bold text-white">
               클라우드에 접속하여 동작하는 뇌가 없는 로봇 (Brainless Robot)
@@ -419,8 +471,8 @@
               네트워킹은 필수이다.
             </p>
             <div class="py-20">
-              <div class="w-full h-fit bg-slate-300 rounded">
-                <p class="py-5 text-black px-10">
+              <div class="w-full h-fit border rounded-xl">
+                <p class="py-5 px-10">
                   서버호스팅은 사용자가 서버 전체를 독점해 자유롭게 이용할 수
                   있는 서비스입니다. 마치 건물주가 건물 하나를 마음대로 사용할
                   수 있는 것과 같은데요.
@@ -438,8 +490,8 @@
               운영한다는 차이점이 있습니다.
             </p>
             <div class="py-20">
-              <div class="w-full h-fit bg-slate-300 rounded">
-                <p class="py-5 text-black px-10">
+              <div class="w-full h-fit border rounded-xl">
+                <p class="py-5 px-10">
                   사용자가 소유하고 있는 서버를 호스팅 전문 업체에 위탁해
                   운영하는 것을 말합니다.사용자는 호스팅 업체의 인터넷 서비스
                   센터에 서버를 맡기고 네트워크 회선을 빌려서 사용합니다. 주로
@@ -473,6 +525,26 @@
     <!-- Swiper JS -->
     <script>
       var swiper = new Swiper(".coverImgSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 10000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".itemImgSwiper", {
         slidesPerView: 1,
         spaceBetween: 30,
         centeredSlides: true,

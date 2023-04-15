@@ -26,24 +26,34 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-    <title>Pocheon Data Center | 포천데이터센터</title>
+    <title>GNB Data Center | GNB데이터센터</title>
   </head>
   <body class="bg-zinc-950">
     <!-- Header Section : Begin-->
-    <header class="fixed top-0 left-0 w-full h-16 px-10 z-50">
+    <header
+      class="fixed top-0 left-0 right-0 bottom-0 w-full h-16 lg:px-10 z-50"
+    >
       <!-- Navigation Bar : Begin -->
-      <nav class="flex justify-between items-center">
-        <div class="tracking-tighter">
-          <h4 class="text-3xl font-thin text-gray-300">Pocheon Data Center</h4>
-          <p class="">포천데이터센터</p>
+      <nav class="flex justify-between items-center relative p-3">
+        <div class="lg:basis-1/2">
+          <h4
+            class="block text-sm lg:text-2xl font-semibold text-gray-300 tracking-tighter"
+          >
+            GNB Data Center
+          </h4>
+          <p class="hidden tracking-tighter lg:block">GNB데이터센터</p>
         </div>
-        <div class="flex justify-between items-center text-gray-300">
-          <ul class="flex justify-between items-center gap-x-5">
+        <div
+          class="nav__menu hidden transition ease-in-out duration-1000 fixed lg:static lg:block top-0 right-0 text-end text-gray-300 w-9/12 lg:basis-1/2"
+        >
+          <ul
+            class="flex flex-col z-50 lg:items-center lg:justify-end lg:flex-row lg:h-auto h-screen shadow-2xl shadow-zinc-900 bg-zinc-900 lg:bg-transparent rounded-l-2xl lg:rounded-none lg:border-none lg:shadow-none"
+          >
             <li class="py-2 text-sm hover:text-gray-50 hover:font-semibold">
-              <a href="index.html" class="block px-4 py-2">포천데이터 센터</a>
+              <a href="index.html" class="block px-4 py-2">GNB데이터 센터</a>
             </li>
             <!-- DropDown Menu : Begin -->
-            <li>
+            <li class="">
               <button
                 id="dropdownDividerButton"
                 data-dropdown-toggle="dropdownDivider"
@@ -61,7 +71,7 @@
                 <div class="py-2 text-sm">
                   <a
                     href="datacenter.html"
-                    class="block px-4 py-2 hover:text-gray-50 hover:font-semibold"
+                    class="block px-4 py-2 hover:text-gray-50 hover:font-semibold text-center"
                     >데이터센터란?</a
                   >
                 </div>
@@ -72,14 +82,14 @@
                   <li>
                     <a
                       href="infra.html"
-                      class="block px-4 py-2 hover:text-gray-50 hover:font-semibold"
+                      class="block px-4 py-2 hover:text-gray-50 hover:font-semibold text-center"
                       >인프라</a
                     >
                   </li>
                   <li>
                     <a
                       href="trending.html"
-                      class="block px-4 py-2 hover:text-gray-50 hover:font-semibold"
+                      class="block px-4 py-2 hover:text-gray-50 hover:font-semibold text-center"
                       >트랜드</a
                     >
                   </li>
@@ -92,237 +102,259 @@
                 >서비스</a
               >
             </li>
-          </ul>
-          <!-- Flag : Begin -->
-          <div>
-            <div class="flex items-center md:order-2">
-              <button
-                type="button"
-                data-dropdown-toggle="language-dropdown-menu"
-                class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm rounded-lg cursor-pointer"
-              >
-                <svg
-                  class="w-5 h-5 mr-2 rounded-full"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 3900 3900"
-                >
-                  <path fill="#b22234" d="M0 0h7410v3900H0z" />
-                  <path
-                    d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0"
-                    stroke="#fff"
-                    stroke-width="300"
-                  />
-                  <path fill="#3c3b6e" d="M0 0h2964v2100H0z" />
-                  <g fill="#fff">
-                    <g id="d">
-                      <g id="c">
-                        <g id="e">
-                          <g id="b">
-                            <path
-                              id="a"
-                              d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"
-                            />
-                            <use xlink:href="#a" y="420" />
-                            <use xlink:href="#a" y="840" />
-                            <use xlink:href="#a" y="1260" />
-                          </g>
-                          <use xlink:href="#a" y="1680" />
-                        </g>
-                        <use xlink:href="#b" x="247" y="210" />
-                      </g>
-                      <use xlink:href="#c" x="494" />
-                    </g>
-                    <use xlink:href="#d" x="988" />
-                    <use xlink:href="#c" x="1976" />
-                    <use xlink:href="#e" x="2470" />
-                  </g>
-                </svg>
-                English (US)
-              </button>
-              <!-- Dropdown -->
-              <div
-                class="z-50 hidden my-4 text-base list-none divide-y divide-gray-100 rounded-lg shadow"
-                id="language-dropdown-menu"
-              >
-                <ul class="py-2 font-medium" role="none">
-                  <li>
-                    <a
-                      href="#"
-                      class="block px-4 py-2 text-sm text-gray-500 hover:text-gray-50 hover:font-semibold"
-                      role="menuitem"
+            <li>
+              <!-- Flag : Begin -->
+              <div class="absolute lg:static bottom-10 right-0">
+                <div class="flex items-center md:order-2">
+                  <button
+                    type="button"
+                    data-dropdown-toggle="language-dropdown-menu"
+                    class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm rounded-lg cursor-pointer"
+                  >
+                    <svg
+                      class="w-5 h-5 mr-2 rounded-full"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 3900 3900"
                     >
-                      <div class="inline-flex items-center">
-                        <svg
-                          aria-hidden="true"
-                          class="h-3.5 w-3.5 rounded-full mr-2"
-                          xmlns="http://www.w3.org/2000/svg"
-                          id="flag-icon-css-us"
-                          viewBox="0 0 512 512"
-                        >
-                          <g fill-rule="evenodd">
-                            <g stroke-width="1pt">
-                              <path
-                                fill="#bd3d44"
-                                d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
-                                transform="scale(3.9385)"
-                              />
-                              <path
-                                fill="#fff"
-                                d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
-                                transform="scale(3.9385)"
-                              />
+                      <path fill="#b22234" d="M0 0h7410v3900H0z" />
+                      <path
+                        d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0"
+                        stroke="#fff"
+                        stroke-width="300"
+                      />
+                      <path fill="#3c3b6e" d="M0 0h2964v2100H0z" />
+                      <g fill="#fff">
+                        <g id="d">
+                          <g id="c">
+                            <g id="e">
+                              <g id="b">
+                                <path
+                                  id="a"
+                                  d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"
+                                />
+                                <use xlink:href="#a" y="420" />
+                                <use xlink:href="#a" y="840" />
+                                <use xlink:href="#a" y="1260" />
+                              </g>
+                              <use xlink:href="#a" y="1680" />
                             </g>
-                            <path
-                              fill="#192f5d"
-                              d="M0 0h98.8v70H0z"
-                              transform="scale(3.9385)"
-                            />
-                            <path
-                              fill="#fff"
-                              d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z"
-                              transform="scale(3.9385)"
-                            />
+                            <use xlink:href="#b" x="247" y="210" />
                           </g>
-                        </svg>
-                        English (US)
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="block px-4 py-2 text-sm text-gray-500 hover:text-gray-50 hover:font-semibold"
-                      role="menuitem"
-                    >
-                      <div class="inline-flex items-center">
-                        <svg
-                          class="h-3.5 w-3.5 rounded-full mr-2"
-                          aria-hidden="true"
-                          xmlns="http://www.w3.org/2000/svg"
-                          id="flag-icon-css-de"
-                          viewBox="0 0 512 512"
+                          <use xlink:href="#c" x="494" />
+                        </g>
+                        <use xlink:href="#d" x="988" />
+                        <use xlink:href="#c" x="1976" />
+                        <use xlink:href="#e" x="2470" />
+                      </g>
+                    </svg>
+                    English (US)
+                  </button>
+                  <!-- Dropdown -->
+                  <div
+                    class="z-50 hidden my-4 text-base list-none divide-y divide-gray-100 rounded-lg shadow"
+                    id="language-dropdown-menu"
+                  >
+                    <ul class="py-2 font-medium" role="none">
+                      <li>
+                        <a
+                          href="#"
+                          class="block px-4 py-2 text-sm text-gray-500 hover:text-gray-50 hover:font-semibold"
+                          role="menuitem"
                         >
-                          <path fill="#ffce00" d="M0 341.3h512V512H0z" />
-                          <path d="M0 0h512v170.7H0z" />
-                          <path fill="#d00" d="M0 170.7h512v170.6H0z" />
-                        </svg>
-                        Deutsch
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="block px-4 py-2 text-sm text-gray-500 hover:text-gray-50 hover:font-semibold"
-                      role="menuitem"
-                    >
-                      <div class="inline-flex items-center">
-                        <svg
-                          class="h-3.5 w-3.5 rounded-full mr-2"
-                          aria-hidden="true"
-                          xmlns="http://www.w3.org/2000/svg"
-                          id="flag-icon-css-it"
-                          viewBox="0 0 512 512"
+                          <div class="inline-flex items-center">
+                            <svg
+                              aria-hidden="true"
+                              class="h-3.5 w-3.5 rounded-full mr-2"
+                              xmlns="http://www.w3.org/2000/svg"
+                              id="flag-icon-css-us"
+                              viewBox="0 0 512 512"
+                            >
+                              <g fill-rule="evenodd">
+                                <g stroke-width="1pt">
+                                  <path
+                                    fill="#bd3d44"
+                                    d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
+                                    transform="scale(3.9385)"
+                                  />
+                                  <path
+                                    fill="#fff"
+                                    d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
+                                    transform="scale(3.9385)"
+                                  />
+                                </g>
+                                <path
+                                  fill="#192f5d"
+                                  d="M0 0h98.8v70H0z"
+                                  transform="scale(3.9385)"
+                                />
+                                <path
+                                  fill="#fff"
+                                  d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z"
+                                  transform="scale(3.9385)"
+                                />
+                              </g>
+                            </svg>
+                            English (US)
+                          </div>
+                        </a>
+                      </li>
+                      <li class="flex items-start">
+                        <a
+                          href="#"
+                          class="block px-4 py-2 text-sm text-gray-500 hover:text-gray-50 hover:font-semibold"
+                          role="menuitem"
                         >
-                          <g fill-rule="evenodd" stroke-width="1pt">
-                            <path fill="#fff" d="M0 0h512v512H0z" />
-                            <path fill="#009246" d="M0 0h170.7v512H0z" />
-                            <path fill="#ce2b37" d="M341.3 0H512v512H341.3z" />
-                          </g>
-                        </svg>
-                        Italiano
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="block px-4 py-2 text-sm text-gray-500 hover:text-gray-50 hover:font-semibold"
-                      role="menuitem"
-                    >
-                      <div class="inline-flex items-center">
-                        <svg
-                          class="h-3.5 w-3.5 rounded-full mr-2"
-                          aria-hidden="true"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                          id="flag-icon-css-cn"
-                          viewBox="0 0 512 512"
+                          <div class="inline-flex items-centesr">
+                            <svg
+                              class="h-3.5 w-3.5 rounded-full mr-2"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              id="flag-icon-css-de"
+                              viewBox="0 0 512 512"
+                            >
+                              <path fill="#ffce00" d="M0 341.3h512V512H0z" />
+                              <path d="M0 0h512v170.7H0z" />
+                              <path fill="#d00" d="M0 170.7h512v170.6H0z" />
+                            </svg>
+                            Deutsch
+                          </div>
+                        </a>
+                      </li>
+                      <li class="flex items-start">
+                        <a
+                          href="#"
+                          class="block px-4 py-2 text-sm text-gray-500 hover:text-gray-50 hover:font-semibold"
+                          role="menuitem"
                         >
-                          <defs>
-                            <path
-                              id="a"
-                              fill="#ffde00"
-                              d="M1-.3L-.7.8 0-1 .6.8-1-.3z"
-                            />
-                          </defs>
-                          <path fill="#de2910" d="M0 0h512v512H0z" />
-                          <use
-                            width="30"
-                            height="20"
-                            transform="matrix(76.8 0 0 76.8 128 128)"
-                            xlink:href="#a"
-                          />
-                          <use
-                            width="30"
-                            height="20"
-                            transform="rotate(-121 142.6 -47) scale(25.5827)"
-                            xlink:href="#a"
-                          />
-                          <use
-                            width="30"
-                            height="20"
-                            transform="rotate(-98.1 198 -82) scale(25.6)"
-                            xlink:href="#a"
-                          />
-                          <use
-                            width="30"
-                            height="20"
-                            transform="rotate(-74 272.4 -114) scale(25.6137)"
-                            xlink:href="#a"
-                          />
-                          <use
-                            width="30"
-                            height="20"
-                            transform="matrix(16 -19.968 19.968 16 256 230.4)"
-                            xlink:href="#a"
-                          />
-                        </svg>
-                        中文 (繁體)
-                      </div>
-                    </a>
-                  </li>
-                </ul>
+                          <div class="inline-flex items-center">
+                            <svg
+                              class="h-3.5 w-3.5 rounded-full mr-2"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              id="flag-icon-css-it"
+                              viewBox="0 0 512 512"
+                            >
+                              <g fill-rule="evenodd" stroke-width="1pt">
+                                <path fill="#fff" d="M0 0h512v512H0z" />
+                                <path fill="#009246" d="M0 0h170.7v512H0z" />
+                                <path
+                                  fill="#ce2b37"
+                                  d="M341.3 0H512v512H341.3z"
+                                />
+                              </g>
+                            </svg>
+                            Italiano
+                          </div>
+                        </a>
+                      </li>
+                      <li class="flex items-start">
+                        <a
+                          href="#"
+                          class="block px-4 py-2 text-sm text-gray-500 hover:text-gray-50 hover:font-semibold"
+                          role="menuitem"
+                        >
+                          <div class="inline-flex items-center">
+                            <svg
+                              class="h-3.5 w-3.5 rounded-full mr-2"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              id="flag-icon-css-cn"
+                              viewBox="0 0 512 512"
+                            >
+                              <defs>
+                                <path
+                                  id="a"
+                                  fill="#ffde00"
+                                  d="M1-.3L-.7.8 0-1 .6.8-1-.3z"
+                                />
+                              </defs>
+                              <path fill="#de2910" d="M0 0h512v512H0z" />
+                              <use
+                                width="30"
+                                height="20"
+                                transform="matrix(76.8 0 0 76.8 128 128)"
+                                xlink:href="#a"
+                              />
+                              <use
+                                width="30"
+                                height="20"
+                                transform="rotate(-121 142.6 -47) scale(25.5827)"
+                                xlink:href="#a"
+                              />
+                              <use
+                                width="30"
+                                height="20"
+                                transform="rotate(-98.1 198 -82) scale(25.6)"
+                                xlink:href="#a"
+                              />
+                              <use
+                                width="30"
+                                height="20"
+                                transform="rotate(-74 272.4 -114) scale(25.6137)"
+                                xlink:href="#a"
+                              />
+                              <use
+                                width="30"
+                                height="20"
+                                transform="matrix(16 -19.968 19.968 16 256 230.4)"
+                                xlink:href="#a"
+                              />
+                            </svg>
+                            中文 (繁體)
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <!-- Flag : End -->
+              <!-- Flag : End -->
+            </li>
+            <li
+              class="block py-2 text-sm hover:text-gray-50 hover:font-semibold nav__close lg:hidden"
+            >
+              <div class="block px-4 py-2 text-2xl cursor-pointer">
+                <i class="bx bx-x"></i>
+              </div>
+            </li>
+          </ul>
         </div>
+        <!-- Toggle Menu Button : Begin -->
+        <div class="block lg:hidden">
+          <div class="nav-toggle">
+            <i class="bx bxs-category"></i>
+          </div>
+        </div>
+        <!-- Toggle Menu Button : End -->
       </nav>
     </header>
     <!-- Header Section : End-->
     <main class="block">
       <!-- Cover Section : Begin -->
       <section
-        class="bg-gray-950 opacity-40 absolute w-full top-0 bottom-0 left-0 right-0 -z-10"
+        class="bg-gray-950 opacity-40 fixed w-full h-screen top-0 bottom-0 left-0 right-0 -z-10"
       >
-        <div>
-          <img src="#" alt="" />
-        </div>
+        <img
+          src="./assets/img/bg-img-01.jpg"
+          alt="https://img.freepik.com/free-photo/server-racks-computer-network-security-server-room-data-center-d-render-dark-blue-generative-ai_1258-150894.jpg?w=1380&t=st=1681567254~exp=1681567854~hmac=639c8a017a8ac6a641b423a447a5607aa010a57a3777915f1f0f73ffd33de786"
+          class="h-full w-full object-cover object-center"
+        />
       </section>
       <!-- Cover Section : End -->
+
       <!-- Hero Section : Begin -->
       <section id="hero" class="section section-1">
         <div class="flex h-full items-center">
           <div class="">
             <div class="">
-              <h1 class="text-7xl tracking-tighter font-bold">
-                Pocheon <br />
+              <h1 class="h1-title">
+                GNB <br />
                 Data Center
               </h1>
-              <p class="mt-2 text-lg">포천데이터센터에 오신것을 환영합니다.</p>
+              <p class="mt-2">GNB데이터센터에 오신것을 환영합니다.</p>
             </div>
             <div
               class="mt-5 ring-2 ring-gray-700 w-fit p-3 rounded-xl border-gray-500 hover:ring-gray-200 cursor-pointer"
@@ -333,27 +365,26 @@
         </div>
       </section>
       <!-- Hero Section : End -->
+
       <!-- About Section : Begin -->
       <section id="about" class="section section-1">
         <div class="flex h-full items-center">
           <div>
             <div class="">
-              <h1 class="text-7xl tracking-tighter font-bold">
-                포천데이터센터란?
-              </h1>
-              <p class="mt-10 text-lg w-[548px]">
-                &nbsp; 글로벌 트렌드에 앞장서는 최첨단 기술과 데이터를 안전하게
+              <h1 class="h1-title">GNB데이터센터란?</h1>
+              <p class="mt-10">
+                글로벌 트렌드에 앞장서는 최첨단 기술과 데이터를 안전하게
                 보호하고 자연을 생각하는 친환경적인 운영방식으로 최상의 IDC
                 서비스 제공하고 있습니다.
               </p>
-              <p class="mt-2 text-lg w-[548px]">
-                &nbsp; 온라인 결제 쇼핑, 문서, 사진, 영상, 날씨, 교통정보등 삶에
-                필요한 정보 데이터와 함께 하고 있습니다. 국내 데이터센터 인프라
-                구축을 통해 IT서비스를 이용자에게 제공하는 기업들에게
-                코로케이션, 클라우드, 호스팅 서비스를 지원합니다.
+              <p class="mt-2">
+                온라인 결제 쇼핑, 문서, 사진, 영상, 날씨, 교통정보등 삶에 필요한
+                정보 데이터와 함께 하고 있습니다. 국내 데이터센터 인프라 구축을
+                통해 IT서비스를 이용자에게 제공하는 기업들에게 코로케이션,
+                클라우드, 호스팅 서비스를 지원합니다.
               </p>
-              <p class="mt-2 text-lg w-[548px]">
-                &nbsp; 국내 데이터센터 인프라 구축을 통해 IT서비스를 이용자에게
+              <p class="mt-2">
+                국내 데이터센터 인프라 구축을 통해 IT서비스를 이용자에게
                 제공하는 기업들에게 코로케이션, 클라우드, 호스팅 서비스를
                 지원합니다.
               </p>
@@ -362,35 +393,234 @@
         </div>
       </section>
       <!-- About Section : End -->
+
+      <!-- Feature 2 : Begin -->
+      <section id="feature-2" class="section section-3">
+        <div class="flex h-full items-center w-full">
+          <div
+            class="grid sm:grid-cols-2 lg:grid-cols-3 w-full lg:gap-y-20 gap-y-5"
+          >
+            <!-- ITEAM 1 -->
+            <div class="p-1">
+              <div class="flex items-center justify-start lg:justify-center">
+                <!-- Icon -->
+                <div class="card-icon">
+                  <i class="bx bx-current-location"></i>
+                </div>
+                <h3 class="h3-title">위치</h3>
+              </div>
+
+              <p
+                class="item-list-description flex flex-col lg:flex-row justify-center text-sm lg:text-lg"
+              >
+                경기도 포천시 산업단지 내 <br />
+                (부지면적 2,000평)
+              </p>
+            </div>
+            <!-- ITEAM 2 -->
+            <div class="p-1">
+              <div class="flex items-center justify-start lg:justify-center">
+                <!-- Icon -->
+                <div class="card-icon">
+                  <i class="bx bxs-directions"></i>
+                </div>
+                <h3 class="h3-title">층수</h3>
+              </div>
+
+              <p
+                class="item-list-description flex flex-col lg:flex-row justify-center text-sm lg:text-lg"
+              >
+                지상 5층 + 지하 1층 <br />
+                (최대 층수 6층)
+              </p>
+            </div>
+            <!-- ITEAM 3 -->
+            <div class="p-1">
+              <div class="flex items-center justify-start lg:justify-center">
+                <!-- Icon -->
+                <div class="card-icon">
+                  <i class="bx bx-rectangle"></i>
+                </div>
+                <h3 class="h3-title">연면적</h3>
+              </div>
+
+              <p
+                class="item-list-description flex flex-col lg:flex-row justify-center text-sm lg:text-lg"
+              >
+                약 8,000평 이하
+              </p>
+            </div>
+            <!-- ITEAM 4 -->
+            <div class="p-1">
+              <div class="flex items-center justify-start lg:justify-center">
+                <!-- Icon -->
+                <div class="card-icon">
+                  <i class="bx bxs-hot"></i>
+                </div>
+                <h3 class="h3-title">수전전력</h3>
+              </div>
+
+              <p
+                class="item-list-description flex flex-col lg:flex-row justify-center text-sm lg:text-lg"
+              >
+                포천2만KW급 + 용정2만KW급 <br />
+                (전력 이중화)
+              </p>
+            </div>
+            <!-- ITEAM 5 -->
+            <div class="p-1">
+              <div class="flex items-center justify-start lg:justify-center">
+                <!-- Icon -->
+                <div class="card-icon">
+                  <i class="bx bx-coin-stack"></i>
+                </div>
+                <h3 class="h3-title">투자비</h3>
+              </div>
+
+              <p
+                class="item-list-description flex flex-col lg:flex-row justify-center text-sm lg:text-lg"
+              >
+                2,500억원
+                <br />
+                (토지,건설비,금융비 포함)
+              </p>
+            </div>
+            <!-- ITEAM 6 -->
+            <div class="p-1">
+              <div class="flex items-center justify-start lg:justify-center">
+                <!-- Icon -->
+                <div class="card-icon">
+                  <i class="bx bx-search-alt"></i>
+                </div>
+                <h3 class="h3-title">Analytics</h3>
+              </div>
+
+              <p
+                class="item-list-description flex flex-col lg:flex-row justify-center text-sm lg:text-lg"
+              >
+                3등급
+                <br />
+                (TIER 최대등급: 4등급)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Feature 2 : End -->
+
+      <!-- Building Feature : Begin -->
+      <section class="section section-1" id="building-section">
+        <div class="flex items-center h-full justify-center">
+          <div class="grid grid-cols-1 gap-2 lg:gap-5">
+            <!-- Item 1 -->
+            <div
+              class="flex justify-start items-center py-2 card rounded-xl shadow shadow-gray-900 bg-gray-700/50"
+            >
+              <i class="bx bxs-buildings text-gray-400 card-icon"></i>
+
+              <div class="text-lg flex items-center gap-5">
+                <h3 class="h3-title">5F</h3>
+                <span class="card-span">
+                  서버실(540렉 설치) 지원시설 (1,376평)</span
+                >
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="flex justify-start items-center py-2 card rounded-xl shadow shadow-gray-900 bg-gray-700/50"
+            >
+              <i class="bx bxs-buildings text-gray-400 card-icon"></i>
+
+              <div class="text-lg flex items-center gap-5">
+                <h3 class="h3-title">4F</h3>
+                <span class="card-span">
+                  서버실(540렉 설치) 지원시설 (1,376평)
+                </span>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div
+              class="flex justify-start items-center py-2 card rounded-xl shadow shadow-gray-900 bg-gray-700/50"
+            >
+              <i class="bx bxs-buildings text-gray-400 card-icon"></i>
+
+              <div class="text-lg flex items-center gap-5">
+                <h3 class="h3-title">3F</h3>
+                <span class="card-span">
+                  서버실(540렉 설치) 지원시설 (1,376평)
+                </span>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div
+              class="flex justify-start items-center py-2 card rounded-xl shadow shadow-gray-900 bg-gray-700/50"
+            >
+              <i class="bx bxs-buildings text-gray-400 card-icon"></i>
+
+              <div class="text-lg flex items-center gap-5">
+                <h3 class="h3-title">2F</h3>
+                <span class="card-span">
+                  서버실(540렉 설치) 지원시설 (1,376평)</span
+                >
+              </div>
+            </div>
+            <!-- Item 5 -->
+            <div
+              class="flex justify-start items-center py-2 card rounded-xl shadow shadow-gray-900 bg-gray-700/50"
+            >
+              <i class="bx bxs-buildings text-gray-400 card-icon"></i>
+
+              <div class="text-lg flex items-center gap-5">
+                <h3 class="h3-title">1F</h3>
+                <span class="card-span">
+                  발전기실/전기실,소화가스실,접견실(1,069평)
+                </span>
+              </div>
+            </div>
+            <!-- Item 6 -->
+            <div
+              class="flex justify-start items-center py-2 card rounded-xl shadow shadow-gray-900 bg-gray-700/50"
+            >
+              <i class="bx bx-cog text-gray-400 card-icon"></i>
+
+              <div class="text-lg flex items-center gap-5">
+                <h3 class="h3-title">B1</h3>
+                <span class="card-span"> 기계실/주차시설(1,472평) </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Building Feature : End -->
+
       <!-- Feature : Begin -->
-      <section id="feature-1" class="section section-2">
+      <section id="feature-1" class="section section-4">
         <!-- Description Data Center Features -->
         <div class="flex h-full items-center">
-          <div class="grid grid-cols-3 gap-x-2 gap-y-10">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-2 gap-y-5 lg:gap-y-20"
+          >
             <!-- Item 1-->
             <div class="flex items-start">
-              <div class="px-5 text-gray-500 h-full text-5xl">
+              <div class="px-2 lg:px-5 text-gray-500 h-full card-icon">
                 <i class="bx bx-wifi"></i>
               </div>
               <div class="">
-                <h3 class="font-bold text-3xl tracking-tighter">
-                  기업 VPN 전용회선
-                </h3>
+                <h3 class="h3-title">기업 VPN 전용회선</h3>
                 <p class="tracking-tighter mt-2 text-gray-400">
-                  기업 VPN 전용회선 Giga급 프리미엄 인터넷100% 광케이블 인입
+                  기업 VPN 전용회선 Giga급 프리미엄 <br />
+                  인터넷100% 광케이블 인입
                 </p>
               </div>
             </div>
 
             <!-- Item 2-->
             <div class="flex items-start">
-              <div class="px-5 text-gray-500 h-full text-5xl">
+              <div class="px-2 lg:px-5 text-gray-500 h-full card-icon">
                 <i class="bx bx-globe"></i>
               </div>
               <div class="">
-                <h3 class="font-bold text-3xl tracking-tighter">
-                  국제전용회선
-                </h3>
+                <h3 class="h3-title">국제전용회선</h3>
                 <p class="tracking-tighter mt-2 text-gray-400">
                   국제전용회선 <br />
                   중국, 베트남, 동남아 국제직결망 HGX <br />
@@ -401,27 +631,24 @@
 
             <!-- Item 3-->
             <div class="flex items-start">
-              <div class="px-5 text-gray-500 h-full text-5xl">
+              <div class="px-2 lg:px-5 text-gray-500 h-full card-icon">
                 <i class="bx bx-location-plus"></i>
               </div>
               <div class="">
-                <h3 class="font-bold text-3xl tracking-tighter">
-                  로케이션 서비스
-                </h3>
+                <h3 class="h3-title">로케이션 서비스</h3>
                 <p class="tracking-tighter mt-2 text-gray-400">
-                  코로케이션 서비스 100G 연동망 목동 가산 서초 IDC센터
+                  코로케이션 서비스 100G 연동망 목동 가산 <br />
+                  서초 IDC센터
                 </p>
               </div>
             </div>
             <!-- Item 4-->
             <div class="flex items-start">
-              <div class="px-5 text-gray-500 h-full text-5xl">
+              <div class="px-2 lg:px-5 text-gray-500 h-full card-icon">
                 <i class="bx bxs-lock"></i>
               </div>
               <div class="">
-                <h3 class="font-bold text-3xl tracking-tighter">
-                  VPN 장비로 보안연결
-                </h3>
+                <h3 class="h3-title">VPN 장비 보안연결</h3>
                 <p class="tracking-tighter mt-2 text-gray-400">
                   본지사 VPN 전용회선 거리에 상관없이 VPN 장비로 보안연결
                 </p>
@@ -429,29 +656,27 @@
             </div>
             <!-- Item 5-->
             <div class="flex items-start">
-              <div class="px-5 text-gray-500 h-full text-5xl">
+              <div class="px-2 lg:px-5 text-gray-500 h-full card-icon">
                 <i class="bx bx-block"></i>
               </div>
               <div class="">
-                <h3 class="font-bold text-3xl tracking-tighter">
-                  보안 서비스(UTM)
-                </h3>
+                <h3 class="h3-title">보안 서비스(UTM)</h3>
                 <p class="tracking-tighter mt-2 text-gray-400">
-                  보안 서비스(UTM) UTM 통합보안 서비스로 월 10만원대에 임대
+                  보안 서비스(UTM) UTM 통합보안 서비스 <br />
+                  월 10만원대에 임대
                 </p>
               </div>
             </div>
             <!-- Item 6-->
             <div class="flex items-start">
-              <div class="px-5 text-gray-500 h-full text-5xl">
+              <div class="px-2 lg:px-5 text-gray-500 h-full card-icon">
                 <i class="bx bxs-cloud-upload"></i>
               </div>
               <div class="">
-                <h3 class="font-bold text-3xl tracking-tighter">
-                  로케이션 서비스
-                </h3>
+                <h3 class="h3-title">로케이션 서비스</h3>
                 <p class="tracking-tighter mt-2 text-gray-400">
-                  코로케이션 서비스 100G 연동망 목동 가산 서초 IDC센터
+                  코로케이션 서비스 100G 연동망 목동 가산 <br />
+                  서초 IDC센터
                 </p>
               </div>
             </div>
@@ -459,186 +684,77 @@
         </div>
       </section>
       <!-- Feature : End -->
-      <!-- Feature 2 : Begin -->
-      <section id="feature-2" class="section section-2">
-        <div class="flex h-full items-center w-full">
-          <div class="grid grid-cols-3 w-full">
-            <!-- ITEAM 1 -->
-            <div class="p-1">
-              <div class="flex items-center justify-start">
-                <!-- Icon -->
-                <div class="text-7xl">
-                  <i class="bx bx-current-location"></i>
-                </div>
-                <h3 class="text-3xl">위치</h3>
-              </div>
 
-              <p class="item-list-description">
-                경기도 포천시 산업단지 내 <br />
-                (부지면적 2,000평)
-              </p>
-            </div>
-            <!-- ITEAM 2 -->
-            <div class="p-1">
-              <div class="flex items-center justify-start">
-                <!-- Icon -->
-                <div class="text-7xl">
-                  <i class="bx bxs-directions"></i>
-                </div>
-                <h3 class="text-3xl">층수</h3>
-              </div>
-
-              <p class="item-list-description">
-                지상 5층 + 지하 1층 <br />
-                (최대 층수 6층)
-              </p>
-            </div>
-            <!-- ITEAM 3 -->
-            <div class="p-1">
-              <div class="flex items-center justify-start">
-                <!-- Icon -->
-                <div class="text-7xl">
-                  <i class="bx bx-rectangle"></i>
-                </div>
-                <h3 class="text-3xl">연면적</h3>
-              </div>
-
-              <p class="item-list-description">약 8,000평 이하</p>
-            </div>
-            <!-- ITEAM 4 -->
-            <div class="p-1">
-              <div class="flex items-center justify-start">
-                <!-- Icon -->
-                <div class="text-7xl">
-                  <i class="bx bxs-hot"></i>
-                </div>
-                <h3 class="text-3xl">수전전력</h3>
-              </div>
-
-              <p class="item-list-description">
-                포천2만KW급 + 용정2만KW급 <br />
-                (전력 이중화)
-              </p>
-            </div>
-            <!-- ITEAM 5 -->
-            <div class="p-1">
-              <div class="flex items-center justify-start">
-                <!-- Icon -->
-                <div class="text-7xl">
-                  <i class="bx bx-coin-stack"></i>
-                </div>
-                <h3 class="text-3xl">투자비</h3>
-              </div>
-
-              <p class="item-list-description">
-                2,500억원
-                <br />
-                (토지,건설비,금융비 포함)
-              </p>
-            </div>
-            <!-- ITEAM 6 -->
-            <div class="p-1">
-              <div class="flex items-center justify-start">
-                <!-- Icon -->
-                <div class="text-7xl">
-                  <i class="bx bx-search-alt"></i>
-                </div>
-                <h3 class="text-3xl">Analytics</h3>
-              </div>
-
-              <p class="item-list-description">
-                3등급
-                <br />
-                (TIER 최대등급: 4등급)
-              </p>
-            </div>
+      <!-- 포천 데이터센터 총 투자금 내역 : Begin -->
+      <section class="section section-2">
+        <div class="h-full lg:flex lg:flex-col lg:items-center">
+          <div>
+            <h1 class="h1-title">
+              포천 데이터센터 <br />
+              총 투자금 내역
+            </h1>
           </div>
-        </div>
-      </section>
-      <!-- Feature 2 : End -->
-      <!-- Building Feature : Begin -->
-      <section class="section section-1" id="building-section">
-        <div class="flex items-center h-full">
-          <div class="grid grid-cols-1 gap-5">
-            <!-- Item 1 -->
-            <div
-              class="flex justify-start items-center py-5 gap-x-5 bg-gray-700/50 px-5 rounded-xl shadow shadow-gray-900"
-            >
-              <i class="bx bxs-buildings text-gray-400 bx-lg"></i>
-
-              <div class="text-lg flex items-center gap-5">
-                <h3 class="text-3xl">5F</h3>
-                <span> 서버실(540렉 설치) 지원시설 (1,376평)</span>
-              </div>
-            </div>
-            <!-- Item 2 -->
-            <div
-              class="flex justify-start items-center py-5 gap-x-5 bg-gray-700/50 px-5 rounded-xl shadow shadow-gray-900"
-            >
-              <i class="bx bxs-buildings text-gray-400 bx-lg"></i>
-
-              <div class="text-lg flex items-center gap-5">
-                <h3 class="text-3xl">4F</h3>
-                <span> 서버실(540렉 설치) 지원시설 (1,376평) </span>
-              </div>
-            </div>
-            <!-- Item 3 -->
-            <div
-              class="flex justify-start items-center py-5 gap-x-5 bg-gray-700/50 px-5 rounded-xl shadow shadow-gray-900"
-            >
-              <i class="bx bxs-buildings text-gray-400 bx-lg"></i>
-
-              <div class="text-lg flex items-center gap-5">
-                <h3 class="text-3xl">3F</h3>
-                <span> 서버실(540렉 설치) 지원시설 (1,376평) </span>
-              </div>
-            </div>
-            <!-- Item 4 -->
-            <div
-              class="flex justify-start items-center py-5 gap-x-5 bg-gray-700/50 px-5 rounded-xl shadow shadow-gray-900"
-            >
-              <i class="bx bxs-buildings text-gray-400 bx-lg"></i>
-
-              <div class="text-lg flex items-center gap-5">
-                <h3 class="text-3xl">2F</h3>
-                <span> 서버실(540렉 설치) 지원시설 (1,376평)</span>
-              </div>
-            </div>
-            <!-- Item 5 -->
-            <div
-              class="flex justify-start items-center py-5 gap-x-5 bg-gray-700/50 px-5 rounded-xl shadow shadow-gray-900"
-            >
-              <i class="bx bxs-buildings text-gray-400 bx-lg"></i>
-
-              <div class="text-lg flex items-center gap-5">
-                <h3 class="text-3xl">1F</h3>
-                <span> 발전기실/전기실,소화가스실,접견실(1,069평) </span>
-              </div>
-            </div>
-            <!-- Item 6 -->
-            <div
-              class="flex justify-start items-center py-5 gap-x-5 bg-gray-700/50 px-5 rounded-xl shadow shadow-gray-900"
-            >
-              <i class="bx bx-cog text-gray-400 bx-lg"></i>
-
-              <div class="text-lg flex items-center gap-5">
-                <h3 class="text-3xl">B1</h3>
-                <span> 기계실/주차시설(1,472평) </span>
+          <div class="flex items-center justify-center">
+            <div class="lg:flex lg:flex-col lg:justify-center">
+              <div
+                class="grid grid-cols-1 gap-3 mt-10 lg:grid-cols-3 lg:mt-12 lg:gap-5"
+              >
+                <!-- Item 1 -->
+                <div class="flex items-center gap-5">
+                  <div
+                    class="text-2xl p-3 rounded-xl lg:text-5xl border lg:p-5 lg:rounded-2xl"
+                  >
+                    <i class="bx bx-diamond"></i>
+                  </div>
+                  <div class="pl-2">
+                    <h3 class="h3-title">2,500억원</h3>
+                    <div class="text-lg text-gray-400">
+                      총 공사비용 2,500억원
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="flex items-center gap-5">
+                  <div
+                    class="text-2xl p-3 rounded-xl lg:text-5xl border lg:p-5 lg:rounded-2xl"
+                  >
+                    <i class="bx bx-diamond"></i>
+                  </div>
+                  <div class="pl-2">
+                    <h3 class="h3-title">200억원</h3>
+                    <div class="text-lg text-gray-400">
+                      초기 투자비용 200억원
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="flex items-center gap-5">
+                  <div
+                    class="text-2xl p-3 rounded-xl lg:text-5xl border lg:p-5 lg:rounded-2xl"
+                  >
+                    <i class="bx bx-diamond"></i>
+                  </div>
+                  <div class="pl-2">
+                    <h3 class="h3-title">2,300억원</h3>
+                    <div class="text-lg text-gray-400">PF자금 2,300억원</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Building Feature : End -->
+      <!-- 포천 데이터센터 총 투자금 내역 : End -->
+
       <!-- Smart Data Center Info : Begin -->
       <section class="section section-1">
         <div class="flex items-center h-full">
           <div class="flex flex-col justify-center">
-            <h1 class="text-7xl tracking-tighter font-semibold">
-              스마트 데이터센터의 <br />
+            <h1 class="h1-title">
+              스마트데이터센터의 <br />
               특징은?
             </h1>
-            <div class="w-8/12">
+            <div class="w-full">
               <p class="my-4">
                 &nbsp; 패키지형으로 제작된 제품은 전원만 연결하면 즉시 사용할 수
                 있어 빠른 구축이 가능하며 서버를 위한 공간 "Cooling Zone" 은
@@ -658,21 +774,22 @@
         </div>
       </section>
       <!-- Smart Data Center Info : End -->
+
       <!-- Smart Data Center Info-2 : Begin -->
       <section class="section section-1">
         <div class="flex items-center h-full w-full">
           <div class="flex flex-col justify-center gap-8">
             <!-- Item 1 -->
             <div class="flex justify-between items-start gap-8">
-              <div class="basis-1/2">
+              <div class="hidden lg:block lg:basis-1/2">
                 <img
                   src="https://images.unsplash.com/photo-1495592822108-9e6261896da8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                   alt=""
                   class="bg-gray-700 bg-contain bg-center"
                 />
               </div>
-              <div class="basis-1/2">
-                <h3 class="text-3xl font-bold py-5">정성적 효과</h3>
+              <div class="lg:basis-1/2">
+                <h3 class="h3-title">정성적 효과</h3>
                 <ul class="list-disc pl-5">
                   <li class="">손쉬운 배치 및 설치 - Plug & Play</li>
                   <li class="">손쉬운 확장 - 데이터 증가에 대한 고민해결</li>
@@ -686,15 +803,15 @@
             </div>
             <!-- Item 2 -->
             <div class="flex justify-between items-start gap-8">
-              <div class="basis-1/2">
+              <div class="hidden lg:block lg:basis-1/2">
                 <img
                   src="https://images.unsplash.com/photo-1625535069703-a67ae00bd6de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
                   alt=""
                   class="object-cover w-full"
                 />
               </div>
-              <div class="basis-1/2">
-                <h3 class="text-3xl font-bold py-5">정량적 효과</h3>
+              <div class="lg:basis-1/2">
+                <h3 class="h3-title">정량적 효과</h3>
                 <ul class="list-disc pl-5">
                   <li class="text-gray-400 font-semibold tracking-tighter">
                     60% 이상의 운영비용 절감
@@ -721,51 +838,8 @@
         </div>
       </section>
       <!-- Smart Data Center Info-2 : End -->
-      <!-- 포천 데이터센터 총 투자금 내역 : Begin -->
-      <section class="section section-2">
-        <div class="h-full flex justify-center">
-          <div class="flex flex-col justify-center">
-            <h1 class="text-7xl tracking-tighter font-semibold">
-              포천 데이터센터 총 투자금 내역
-            </h1>
-            <div class="grid grid-cols-3 mt-12">
-              <!-- Item 1 -->
-              <div class="flex items-center gap-5">
-                <div class="text-5xl border p-5 rounded-2xl">
-                  <i class="bx bx-diamond"></i>
-                </div>
-                <div class="pl-6">
-                  <h3 class="text-3xl tracking-tighter font-bold">2,500억원</h3>
-                  <div class="text-lg text-gray-400">총 공사비용 2,500억원</div>
-                </div>
-              </div>
-              <!-- Item 2 -->
-              <div class="flex items-center gap-5">
-                <div class="text-5xl border p-5 rounded-2xl">
-                  <i class="bx bx-diamond"></i>
-                </div>
-                <div class="pl-6">
-                  <h3 class="text-3xl tracking-tighter font-bold">200억원</h3>
-                  <div class="text-lg text-gray-400">초기 투자비용 200억원</div>
-                </div>
-              </div>
-              <!-- Item 3 -->
-              <div class="flex items-center gap-5">
-                <div class="text-5xl border p-5 rounded-2xl">
-                  <i class="bx bx-diamond"></i>
-                </div>
-                <div class="pl-6">
-                  <h3 class="text-3xl tracking-tighter font-bold">2,300억원</h3>
-                  <div class="text-lg text-gray-400">PF자금 2,300억원</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- 포천 데이터센터 총 투자금 내역 : End -->
+
       <!-- 포천 데이터센터 효과 : Begin -->
-      <!-- Section -->
       <section class="section" data-scroll>
         <div class="h-screen max-w-7xl">
           <div class="swiper mySwiper">
@@ -856,90 +930,109 @@
         </div>
       </section>
       <!-- 포천 데이터센터 효과 : End -->
+
+      <!-- Design Review Data : Begin -->
+      <section class="section section-1">
+        <div class="flex items-center h-full">
+          <div class="w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+              <div class="bg-slate-200 w-full p-3 rounded-md">
+                <img
+                  src="http://data.grnnature.com/second/img/a.png"
+                  alt=""
+                  class="object-fill object-center"
+                />
+                <div class="text-center text-black pt-3">설계 검토 자료</div>
+              </div>
+              <div class="bg-slate-200 w-full p-3 rounded-md">
+                <img
+                  src="http://data.grnnature.com/second/img/a.png"
+                  alt=""
+                  class="object-fill object-center"
+                />
+                <div class="text-center text-black pt-3">설계 검토 자료</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Design Review Data : End -->
+
       <!-- Time Line : Begin -->
-      <section class="w-full h-screen flex items-center">
+      <section class="w-full lg:h-screen flex items-center">
         <div class="w-full px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
-          <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-4xl font-extrabold leading-tight tracking-tight">
-              IDC사업 일정 및 사업 계획
-            </h2>
+          <div class="max-w-3xl mx-auto text-start lg:text-center lg:py-10">
+            <h2 class="h2-title">IDC사업 일정 및 사업 계획</h2>
           </div>
 
           <div class="flow-root max-w-3xl mx-auto mt-8 sm:mt-12 lg:mt-16">
             <div class="-my-4 divide-y divide-gray-200">
               <div
-                class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center"
+                class="flex flex-col gap-2 py-2 lg:py-4 sm:gap-6 sm:flex-row sm:items-center"
               >
-                <p class="basis-4/12 text-lg font-normal tracking-tighter">
+                <p class="basis-4/12 font-thin lg:font-normal">
                   2022년 3분기 ~ 2022년 4분기
                 </p>
-                <h3 class="basis-8/12 text-lg font-semibold">
-                  FS 타당성조사용역
-                </h3>
+                <h3 class="basis-8/12 h3-title">FS 타당성조사용역</h3>
               </div>
 
               <div
-                class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center"
+                class="flex flex-col gap-2 py-2 lg:py-4 sm:gap-6 sm:flex-row sm:items-center"
               >
-                <p class="basis-4/12 text-lg font-normal tracking-tighter">
+                <p class="basis-4/12 font-thin lg:font-normal">
                   2022년 4분기 ~ 2023년 2분기
                 </p>
-                <h3 class="basis-8/12 text-lg font-semibold">
+                <h3 class="basis-8/12 h3-title">
                   설계용역 발주(실시설계포함) 및 인허가
                 </h3>
               </div>
 
               <div
-                class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center"
+                class="flex flex-col gap-2 py-2 lg:py-4 sm:gap-6 sm:flex-row sm:items-center"
               >
-                <p class="basis-4/12 text-lg font-normal tracking-tighter">
+                <p class="basis-4/12 font-thin lg:font-normal">
                   2023년 1분기 ~ 2024년 상반기
                 </p>
-                <h3 class="basis-8/12 text-lg font-semibold">
-                  참여사 협약 체결
-                </h3>
+                <h3 class="basis-8/12 h3-title">참여사 협약 체결</h3>
               </div>
 
               <div
-                class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center"
+                class="flex flex-col gap-2 py-2 lg:py-4 sm:gap-6 sm:flex-row sm:items-center"
               >
-                <p class="basis-4/12 text-lg font-normal tracking-tighter">
+                <p class="basis-4/12 font-thin lg:font-normal">
                   2023년 1분기 ~ 2023년 4분기
                 </p>
-                <h3 class="basis-8/12 text-lg font-semibold">
-                  증자 및 PF 체결
-                </h3>
+                <h3 class="basis-8/12 h3-title">증자 및 PF 체결</h3>
               </div>
 
               <div
-                class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center"
+                class="flex flex-col gap-2 py-2 lg:py-4 sm:gap-6 sm:flex-row sm:items-center"
               >
-                <p class="basis-4/12 text-lg font-normal tracking-tighter">
+                <p class="basis-4/12 font-thin lg:font-normal">
                   2023년 2분기 ~ 2023년 3분기
                 </p>
-                <h3 class="basis-8/12 text-lg font-semibold">
-                  SPC설립 및 부지계약 체결 (초기 자금 출자 : 220억)
+                <h3 class="basis-8/12 h3-title">
+                  SPC설립 및 부지계약 체결 <br />
+                  (초기 자금 출자 : 220억)
                 </h3>
               </div>
 
               <div
-                class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center"
+                class="flex flex-col gap-2 py-2 lg:py-4 sm:gap-6 sm:flex-row sm:items-center"
               >
-                <p class="basis-4/12 text-lg font-normal tracking-tighter">
+                <p class="basis-4/12 font-thin lg:font-normal">
                   2023년 2분기 ~ 2024년 하반기
                 </p>
-                <h3 class="basis-8/12 text-lg font-semibold">착공 및 준공</h3>
+                <h3 class="basis-8/12 h3-title">착공 및 준공</h3>
               </div>
 
               <div
-                class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center"
+                class="flex flex-col gap-2 py-2 lg:py-4 sm:gap-6 sm:flex-row sm:items-center"
               >
-                <p class="basis-4/12 text-lg font-normal tracking-tighter">
+                <p class="basis-4/12 font-thin lg:font-normal">
                   2023년 3분기 ~ 2024년 하반기
                 </p>
-                <h3 class="basis-8/12 text-lg font-semibold">
-                  건설기간(15개월~18개월)
-                </h3>
+                <h3 class="basis-8/12 h3-title">건설기간(15개월~18개월)</h3>
               </div>
             </div>
           </div>
@@ -962,6 +1055,21 @@
           el: ".swiper-pagination",
           clickable: true,
         },
+      });
+    </script>
+    <script>
+      const nav = document.querySelector(".nav");
+      const navMenu = document.querySelector(".nav__menu");
+      const navToggle = document.querySelector(".nav-toggle");
+      const navClose = document.querySelector(".nav__close");
+
+      navToggle.addEventListener("click", function () {
+        navMenu.classList.add("r");
+        navMenu.classList.remove("hidden");
+      });
+      navClose.addEventListener("click", function () {
+        navMenu.classList.remove("block");
+        navMenu.classList.add("hidden");
       });
     </script>
     <!-- Swiper JS : End -->
