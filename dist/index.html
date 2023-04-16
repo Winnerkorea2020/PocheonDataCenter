@@ -24,6 +24,9 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
 
+    <!-- Animation On Scroll  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <title>GNB Data Center | GNB데이터센터</title>
@@ -350,7 +353,12 @@
         <div class="flex h-full items-center">
           <div class="">
             <div class="">
-              <h1 class="h1-title">
+              <h1
+                class="h1-title"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              >
                 GNB <br />
                 Data Center
               </h1>
@@ -359,7 +367,7 @@
             <div
               class="mt-5 ring-2 ring-gray-700 w-fit p-3 rounded-xl border-gray-500 hover:ring-gray-200 cursor-pointer"
             >
-              <a href="#" class="font-bold">Get Start</a>
+              <a href="#about" class="font-bold">Get Start</a>
             </div>
           </div>
         </div>
@@ -370,7 +378,12 @@
       <section id="about" class="section section-1">
         <div class="flex h-full items-center">
           <div>
-            <div class="">
+            <div
+              class=""
+              data-aos="zoom-out-right"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
               <h1 class="h1-title">GNB데이터센터란?</h1>
               <p class="mt-10">
                 글로벌 트렌드에 앞장서는 최첨단 기술과 데이터를 안전하게
@@ -395,7 +408,13 @@
       <!-- About Section : End -->
 
       <!-- Feature 2 : Begin -->
-      <section id="feature-2" class="section section-3">
+      <section
+        id="feature-2"
+        class="section section-3"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
         <div class="flex h-full items-center w-full">
           <div
             class="grid sm:grid-cols-2 lg:grid-cols-3 w-full lg:gap-y-20 gap-y-5"
@@ -515,6 +534,8 @@
             <!-- Item 1 -->
             <div
               class="flex justify-start items-center py-2 card rounded-xl shadow shadow-gray-900 bg-gray-700/50"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
             >
               <i class="bx bxs-buildings text-gray-400 card-icon"></i>
 
@@ -528,6 +549,8 @@
             <!-- Item 2 -->
             <div
               class="flex justify-start items-center py-2 card rounded-xl shadow shadow-gray-900 bg-gray-700/50"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
             >
               <i class="bx bxs-buildings text-gray-400 card-icon"></i>
 
@@ -541,6 +564,8 @@
             <!-- Item 3 -->
             <div
               class="flex justify-start items-center py-2 card rounded-xl shadow shadow-gray-900 bg-gray-700/50"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
             >
               <i class="bx bxs-buildings text-gray-400 card-icon"></i>
 
@@ -554,6 +579,8 @@
             <!-- Item 4 -->
             <div
               class="flex justify-start items-center py-2 card rounded-xl shadow shadow-gray-900 bg-gray-700/50"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
             >
               <i class="bx bxs-buildings text-gray-400 card-icon"></i>
 
@@ -567,6 +594,8 @@
             <!-- Item 5 -->
             <div
               class="flex justify-start items-center py-2 card rounded-xl shadow shadow-gray-900 bg-gray-700/50"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
             >
               <i class="bx bxs-buildings text-gray-400 card-icon"></i>
 
@@ -580,6 +609,8 @@
             <!-- Item 6 -->
             <div
               class="flex justify-start items-center py-2 card rounded-xl shadow shadow-gray-900 bg-gray-700/50"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
             >
               <i class="bx bx-cog text-gray-400 card-icon"></i>
 
@@ -596,7 +627,7 @@
       <!-- Feature : Begin -->
       <section id="feature-1" class="section section-4">
         <!-- Description Data Center Features -->
-        <div class="flex h-full items-center">
+        <div class="flex h-full items-center" data-aos="fade-down">
           <div
             class="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-2 gap-y-5 lg:gap-y-20"
           >
@@ -687,7 +718,10 @@
 
       <!-- 포천 데이터센터 총 투자금 내역 : Begin -->
       <section class="section section-2">
-        <div class="h-full lg:flex lg:flex-col lg:items-center">
+        <div
+          class="h-full lg:flex lg:flex-col lg:items-center"
+          data-aos="fade-down"
+        >
           <div>
             <h1 class="h1-title">
               포천 데이터센터 <br />
@@ -748,7 +782,12 @@
 
       <!-- Smart Data Center Info : Begin -->
       <section class="section section-1">
-        <div class="flex items-center h-full">
+        <div
+          class="flex items-center h-full"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <div class="flex flex-col justify-center">
             <h1 class="h1-title">
               스마트데이터센터의 <br />
@@ -785,10 +824,11 @@
                 <img
                   src="https://images.unsplash.com/photo-1495592822108-9e6261896da8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                   alt=""
-                  class="bg-gray-700 bg-contain bg-center"
+                  class="object-cover w-full"
+                  data-aos="flip-left"
                 />
               </div>
-              <div class="lg:basis-1/2">
+              <div class="lg:basis-1/2" data-aos="flip-left">
                 <h3 class="h3-title">정성적 효과</h3>
                 <ul class="list-disc pl-5">
                   <li class="">손쉬운 배치 및 설치 - Plug & Play</li>
@@ -808,9 +848,10 @@
                   src="https://images.unsplash.com/photo-1625535069703-a67ae00bd6de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
                   alt=""
                   class="object-cover w-full"
+                  data-aos="flip-left"
                 />
               </div>
-              <div class="lg:basis-1/2">
+              <div class="lg:basis-1/2" data-aos="flip-left">
                 <h3 class="h3-title">정량적 효과</h3>
                 <ul class="list-disc pl-5">
                   <li class="text-gray-400 font-semibold tracking-tighter">
@@ -990,7 +1031,12 @@
         <div class="flex items-center h-full">
           <div class="w-full">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-              <div class="bg-slate-200 w-full p-3 rounded-md">
+              <div
+                class="bg-slate-200 w-full p-3 rounded-md"
+                data-aos="flip-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              >
                 <img
                   src="http://data.grnnature.com/second/img/a.png"
                   alt=""
@@ -998,7 +1044,12 @@
                 />
                 <div class="text-center text-black pt-3">설계 검토 자료</div>
               </div>
-              <div class="bg-slate-200 w-full p-3 rounded-md">
+              <div
+                class="bg-slate-200 w-full p-3 rounded-md"
+                data-aos="flip-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              >
                 <img
                   src="http://data.grnnature.com/second/img/a.png"
                   alt=""
@@ -1020,7 +1071,12 @@
             <h2 class="h2-title">IDC사업 일정 및 사업 계획</h2>
           </div>
 
-          <div class="flow-root max-w-3xl mx-auto mt-8 sm:mt-12 lg:mt-16">
+          <div
+            class="flow-root max-w-3xl mx-auto mt-8 sm:mt-12 lg:mt-16"
+            data-aos="flip-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="-my-4 divide-y divide-gray-200">
               <div
                 class="flex flex-col gap-2 py-2 lg:py-4 sm:gap-6 sm:flex-row sm:items-center"
@@ -1154,6 +1210,12 @@
       //     .setTween(tween)
       //     .addTo(controller2);
       // });
+    </script>
+
+    <!-- Animation Scroll  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
