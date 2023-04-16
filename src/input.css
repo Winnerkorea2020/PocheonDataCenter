@@ -12,7 +12,7 @@ body {
 }
 
 .section-1 {
-  @apply mt-16 py-32 sm:py-20 lg:h-screen max-w-5xl lg:px-32 px-5;
+  @apply mt-16 py-32 sm:py-20 md:py-32 lg:h-screen max-w-5xl lg:px-32 px-5;
 }
 
 .section-1-h-full {
@@ -20,7 +20,7 @@ body {
 }
 
 .section-2 {
-  @apply mt-16 py-32 sm:py-20 lg:h-screen w-full px-5;
+  @apply mt-16 py-32 sm:py-20 md:py-32 lg:h-screen w-full px-5;
 }
 
 .section-2-h-full {
@@ -32,11 +32,11 @@ body {
 }
 
 .section-3 {
-  @apply mt-16 py-32 sm:py-20 lg:h-screen max-w-5xl lg:px-24 px-5;
+  @apply mt-16 py-32 sm:py-20 md:py-32 lg:h-screen max-w-5xl lg:px-24 px-5;
 }
 
 .section-4 {
-  @apply mt-16 py-32 sm:py-20 lg:h-screen max-w-6xl lg:px-24 px-5;
+  @apply mt-16 py-32 sm:py-20 md:py-32 lg:h-screen max-w-6xl lg:px-24 px-5;
 }
 
 .main-title {
@@ -76,4 +76,52 @@ body {
 
 .card-span {
   @apply text-xs lg:text-lg;
+}
+
+/* S */
+.El {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+.El__wrapper {
+  display: flex;
+  width: 400vw;
+  height: 100vh;
+}
+
+.El__slide {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  @apply p-[300px] 2xl:p-[100px];
+}
+
+.El__content {
+  width: 100%;
+  height: 100%;
+}
+
+.El__content {
+  @apply p-40;
+}
+.El__content ul {
+  @apply list-disc px-10 py-10;
+}
+
+.El__content ul li {
+  @apply font-thin text-2xl;
+}
+.El__title,
+.El__subtitle {
+  position: relative;
+}
+
+.El__title {
+  @apply text-7xl font-semibold tracking-tighter;
+}
+
+.El__subtitle {
+  position: relative;
+  @apply text-3xl tracking-tighter 2xl:text-5xl font-semibold;
 }
