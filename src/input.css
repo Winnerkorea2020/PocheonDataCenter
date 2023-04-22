@@ -82,6 +82,8 @@ body {
   @apply text-xs lg:text-lg;
 }
 
+/* Description paragraph */
+
 /* S */
 .El {
   width: 100%;
