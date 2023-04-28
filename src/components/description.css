@@ -6,5 +6,5 @@
 }
 
 .description-3 {
-  @apply text-sm lg:text-base xl:text-lg tracking-tighter font-thin;
+  @apply text-lg lg:text-xl xl:text-2xl tracking-tighter font-thin;
 }
