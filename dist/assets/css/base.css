@@ -2782,6 +2782,10 @@ body {
     height: 339px;
   }
 
+  .xl\:h-\[420px\] {
+    height: 420px;
+  }
+
   .xl\:w-4\/6 {
     width: 66.666667%;
   }
