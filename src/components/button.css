@@ -1,0 +1,11 @@
+.btn-area {
+  @apply mt-5;
+}
+
+.btn {
+  @apply w-fit p-3 cursor-pointer;
+}
+
+.btn-outline-primary {
+  @apply ring-2 ring-gray-700 rounded-xl border-gray-500 hover:ring-gray-200;
+}

@@ -1,0 +1,36 @@
+/* Header CSS */
+/* Nav */
+.header {
+  @apply fixed top-0 left-0 right-0 bottom-0 w-full px-3 xl:py-3 xl:px-10 z-50 xl:h-16;
+}
+.nav {
+  @apply flex justify-between items-center relative py-3 xl:py-0 h-fit;
+}
+
+.nav__logo {
+  @apply font-normal;
+}
+
+.nav__logo--title {
+  @apply block text-sm xl:text-2xl text-gray-300 tracking-tighter;
+}
+
+.nav__logo--description {
+  @apply hidden tracking-tighter xl:block font-light;
+}
+
+.nav__menu {
+  @apply transition ease-in-out duration-1000 fixed xl:static xl:block top-0 right-0 text-end text-gray-300 w-9/12 xl:basis-1/2;
+}
+
+.nav__item {
+  @apply flex flex-col z-50 xl:items-center xl:justify-end xl:flex-row xl:h-auto h-screen shadow-2xl shadow-zinc-900 bg-zinc-900 lg:bg-transparent rounded-l-2xl lg:rounded-none lg:border-none lg:shadow-none;
+}
+
+.nav__link {
+  @apply px-4 py-2 text-sm hover:text-blue-500;
+}
+
+.nav__toggle {
+  @apply block xl:hidden;
+}

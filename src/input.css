@@ -1,46 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Components */
+@import "./components/nav.css";
+@import "./components/footer.css";
+@import "./components/section.css";
+@import "./components/title.css";
+@import "./components/description.css";
+@import "./components/button.css";
+@import "./components/card.css";
+@import "./components/img.css";
 
 /* 글자사이트 표준 14px */
+* {
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+
 body {
-  @apply bg-black text-gray-50 text-sm lg:text-lg font-thin;
-}
-
-.section {
-  @apply container mx-auto;
-}
-
-.section-1 {
-  @apply mt-16 py-32 sm:py-20 md:py-32 lg:h-screen max-w-5xl lg:px-32 px-5;
-}
-
-.section-1-h-full {
-  @apply h-full max-w-5xl lg:px-32 px-5;
-}
-
-.section-2 {
-  @apply mt-16 py-32 sm:py-20 md:py-32 lg:h-screen w-full px-5;
-}
-
-.section-2-h-full {
-  @apply h-full w-full lg:px-32 px-5;
-}
-
-.section-3-h-full {
-  @apply h-full max-w-5xl lg:px-24 px-5;
-}
-
-.section-3 {
-  @apply mt-16 py-32 sm:py-20 md:py-32 lg:h-screen max-w-5xl lg:px-24 px-5;
-}
-
-.section-4 {
-  @apply mt-16 py-32 sm:py-20 md:py-32 lg:h-screen max-w-6xl lg:px-24 px-5;
-}
-
-.section-5 {
-  @apply mt-16 py-32 sm:py-20 md:py-32 lg:h-screen max-w-6xl lg:px-20 px-5;
+  @apply bg-black text-gray-50 text-sm lg:text-lg font-light;
 }
 
 .main-title {
@@ -69,17 +47,6 @@ body {
 
 .h3-title {
   @apply text-base lg:text-2xl tracking-tighter font-semibold;
-}
-.card {
-  @apply lg:py-5 gap-x-2 lg:gap-x-5 px-2 lg:px-5;
-}
-
-.card-icon {
-  @apply text-2xl lg:text-6xl mr-3;
-}
-
-.card-span {
-  @apply text-xs lg:text-lg;
 }
 
 /* Description paragraph */

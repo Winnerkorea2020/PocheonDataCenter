@@ -1,0 +1,23 @@
+.card__location {
+  @apply lg:flex lg:flex-col lg:items-start lg:gap-5;
+}
+
+.card__location--item {
+  @apply flex items-center justify-start lg:justify-center;
+}
+
+.card {
+  @apply lg:py-5 gap-x-2 lg:gap-x-5 px-2 lg:px-5;
+}
+
+.card__building {
+  @apply flex justify-start items-center py-2 card rounded-xl shadow shadow-gray-900 bg-gray-700/50 lg:py-5 gap-x-2 lg:gap-x-5 px-2 lg:px-5;
+}
+
+.card-icon {
+  @apply text-2xl lg:text-6xl mr-3;
+}
+
+.card-span {
+  @apply text-xs lg:text-lg;
+}

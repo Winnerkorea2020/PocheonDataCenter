@@ -1,0 +1,10 @@
+.description-1 {
+  @apply text-sm lg:text-base xl:text-xl tracking-tighter font-extralight;
+}
+.description-2 {
+  @apply text-base lg:text-lg xl:text-base tracking-tighter font-thin;
+}
+
+.description-3 {
+  @apply text-sm lg:text-base xl:text-lg tracking-tighter font-thin;
+}

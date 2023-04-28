@@ -1,0 +1,27 @@
+.footer {
+  @apply pt-12 px-4 pb-10;
+}
+
+.footer__title {
+  @apply self-center py-3 text-2xl tracking-tighter whitespace-nowrap;
+}
+
+.footer__menu {
+  @apply grid grid-cols-1 lg:grid-cols-2;
+}
+
+.footer__description {
+  @apply text-ellipsis;
+}
+
+.footer__list--title {
+  @apply mb-6 text-xl  uppercase mt-6;
+}
+
+.footer__list {
+  @apply py-1.5;
+}
+
+.footer__link {
+  @apply hover:underline;
+}

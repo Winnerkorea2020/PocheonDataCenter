@@ -1,0 +1,19 @@
+.title-1 {
+  @apply block text-3xl md:text-5xl xl:text-7xl font-medium leading-7;
+}
+
+.title-2 {
+  @apply block text-2xl md:text-4xl xl:text-6xl font-medium tracking-tighter;
+}
+.title-3 {
+  @apply block text-xl md:text-3xl xl:text-5xl font-medium tracking-tighter;
+}
+.title-4 {
+  @apply block text-lg md:text-2xl xl:text-4xl font-medium tracking-tighter;
+}
+.title-5 {
+  @apply block text-base md:text-xl xl:text-3xl font-medium tracking-tighter;
+}
+.title-6 {
+  @apply block text-sm md:text-base xl:text-2xl font-medium tracking-tighter;
+}

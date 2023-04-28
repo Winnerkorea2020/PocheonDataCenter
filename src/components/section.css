@@ -1,0 +1,35 @@
+.section {
+  @apply container mx-auto px-3;
+}
+
+.section-1 {
+  @apply h-full w-full pt-16 sm:py-20 md:py-32 xl:max-w-5xl xl:h-screen;
+}
+
+.section-1-h-full {
+  @apply h-full max-w-5xl;
+}
+
+.section-2 {
+  @apply mt-16 py-32 sm:py-20 md:py-32 lg:h-screen w-full px-3;
+}
+
+.section-2-h-full {
+  @apply h-full w-full;
+}
+
+.section-3-h-full {
+  @apply h-full max-w-5xl lg:px-24 px-3;
+}
+
+.section-3 {
+  @apply mt-16 py-32 sm:py-20 md:py-32 lg:h-screen max-w-5xl lg:px-24 px-3;
+}
+
+.section-4 {
+  @apply mt-16 py-32 sm:py-20 md:py-32 lg:h-screen max-w-6xl lg:px-24 px-3;
+}
+
+.section-5 {
+  @apply mt-16 py-32 sm:py-20 md:py-32 lg:h-screen max-w-6xl lg:px-20 px-3;
+}
