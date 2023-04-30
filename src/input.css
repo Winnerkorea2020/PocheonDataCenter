@@ -11,7 +11,7 @@
 @import "./components/button.css";
 @import "./components/card.css";
 @import "./components/img.css";
-
+@import "./components/animation.css";
 /* 글자사이트 표준 14px */
 * {
   font-family: "IBM Plex Sans KR", sans-serif;

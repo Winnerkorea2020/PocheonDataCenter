@@ -650,11 +650,6 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.mx-72 {
-  margin-left: 18rem;
-  margin-right: 18rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -705,10 +700,6 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mt-72 {
-  margin-top: 18rem;
 }
 
 .mt-8 {
@@ -767,14 +758,6 @@ video {
   height: 280px;
 }
 
-.h-\[339px\] {
-  height: 339px;
-}
-
-.h-\[382px\] {
-  height: 382px;
-}
-
 .h-\[580px\] {
   height: 580px;
 }
@@ -790,14 +773,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[380px\] {
-  height: 380px;
-}
-
-.h-\[420px\] {
-  height: 420px;
 }
 
 .w-3 {
@@ -824,20 +799,8 @@ video {
   width: 482px;
 }
 
-.w-\[608px\] {
-  width: 608px;
-}
-
 .w-full {
   width: 100%;
-}
-
-.w-\[300px\] {
-  width: 300px;
-}
-
-.w-8 {
-  width: 2rem;
 }
 
 .max-w-3xl {
@@ -924,6 +887,10 @@ video {
   gap: 0.75rem;
 }
 
+.gap-48 {
+  gap: 12rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
@@ -934,10 +901,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-48 {
-  gap: 12rem;
 }
 
 .gap-x-5 {
@@ -977,12 +940,6 @@ video {
   border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
 }
 
-.divide-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
-}
-
 .divide-gray-100 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-divide-opacity));
@@ -1016,10 +973,6 @@ video {
 
 .whitespace-nowrap {
   white-space: nowrap;
-}
-
-.rounded {
-  border-radius: 0.25rem;
 }
 
 .rounded-2xl {
@@ -1060,23 +1013,9 @@ video {
   border-width: 1px;
 }
 
-.border-b {
-  border-bottom-width: 1px;
-}
-
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
-}
-
-.border-gray-900 {
-  --tw-border-opacity: 1;
-  border-color: rgb(17 24 39 / var(--tw-border-opacity));
-}
-
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-gray-200 {
@@ -1086,11 +1025,6 @@ video {
 
 .bg-gray-400\/20 {
   background-color: rgb(156 163 175 / 0.2);
-}
-
-.bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
 .bg-gray-900 {
@@ -1106,10 +1040,6 @@ video {
 .bg-slate-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-}
-
-.bg-slate-900\/10 {
-  background-color: rgb(15 23 42 / 0.1);
 }
 
 .bg-white {
@@ -1181,10 +1111,6 @@ video {
 
 .p-8 {
   padding: 2rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .px-10 {
@@ -1271,10 +1197,6 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
 .pb-44 {
   padding-bottom: 11rem;
 }
@@ -1295,6 +1217,10 @@ video {
   padding-left: 1.25rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .pt-12 {
   padding-top: 3rem;
 }
@@ -1305,10 +1231,6 @@ video {
 
 .pt-5 {
   padding-top: 1.25rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
 }
 
 .text-center {
@@ -1428,6 +1350,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .opacity-40 {
@@ -2238,6 +2164,22 @@ video {
   }
 }
 
+[data-scroll] {
+  opacity: 0;
+  will-change: transform, scale, opacity;
+  transform: translateY(6rem) scale(0.93);
+  transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+[data-scroll="out"] {
+  opacity: 0;
+}
+
 /* 글자사이트 표준 14px */
 
 * {
@@ -2727,21 +2669,8 @@ body {
 }
 
 @media (min-width: 1280px) {
-  .xl\:absolute {
-    position: absolute;
-  }
-
-  .xl\:relative {
-    position: relative;
-  }
-
   .xl\:col-span-2 {
     grid-column: span 2 / span 2;
-  }
-
-  .xl\:mx-52 {
-    margin-left: 13rem;
-    margin-right: 13rem;
   }
 
   .xl\:mx-64 {
@@ -2770,20 +2699,20 @@ body {
     display: none;
   }
 
-  .xl\:h-full {
-    height: 100%;
-  }
-
-  .xl\:h-screen {
-    height: 100vh;
-  }
-
   .xl\:h-\[339px\] {
     height: 339px;
   }
 
   .xl\:h-\[420px\] {
     height: 420px;
+  }
+
+  .xl\:h-full {
+    height: 100%;
+  }
+
+  .xl\:h-screen {
+    height: 100vh;
   }
 
   .xl\:w-4\/6 {
@@ -2808,10 +2737,6 @@ body {
 
   .xl\:flex-row {
     flex-direction: row;
-  }
-
-  .xl\:flex-col {
-    flex-direction: column;
   }
 
   .xl\:items-end {
