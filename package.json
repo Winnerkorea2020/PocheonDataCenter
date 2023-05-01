@@ -1,6 +1,10 @@
 {
   "devDependencies": {
-    "tailwindcss": "^3.3.1"
+    "postcss-import": "^15.1.0",
+    "tailwindcss": "^3.3.1",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.1"
   },
   "name": "edu03",
   "version": "1.0.0",
@@ -55,7 +59,6 @@
     "pify": "^2.3.0",
     "pirates": "^4.0.5",
     "postcss": "^8.4.21",
-    "postcss-import": "^14.1.0",
     "postcss-js": "^4.0.1",
     "postcss-load-config": "^3.1.4",
     "postcss-nested": "^6.0.0",
@@ -68,6 +71,8 @@
     "resolve": "^1.22.1",
     "reusify": "^1.0.4",
     "run-parallel": "^1.2.0",
+    "scroll-out": "^2.2.12",
+    "scrollmagic": "^2.0.8",
     "source-map-js": "^1.0.2",
     "sucrase": "^3.31.0",
     "supports-preserve-symlinks-flag": "^1.0.0",
@@ -81,6 +86,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve",
+    "build": "webpack build",
     "dev": "npx tailwindcss -i ./src/input.css -o ./dist/assets/css/base.css --watch"
   },
   "keywords": [],

@@ -8,10 +8,7 @@ const miniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   mode: "development",
   entry: {
-    index: "./src/js/main.js",
-    typeit: "./src/js/typeit.js",
-    anime: "./src/js/anime.js",
-    scrollout: "./src/js/scrollout.js",
+    index: "./src/assets/js/main.js",
   },
   output: {
     filename: "[name]_bundle.js",
