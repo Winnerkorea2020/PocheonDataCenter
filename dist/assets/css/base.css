@@ -1473,8 +1473,6 @@ video {
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .nav__link:hover {
@@ -2597,6 +2595,10 @@ body {
     margin-right: auto;
   }
 
+  .xl\:-mt-20 {
+    margin-top: -5rem;
+  }
+
   .xl\:mb-10 {
     margin-bottom: 2.5rem;
   }
@@ -2615,22 +2617,6 @@ body {
 
   .xl\:mt-20 {
     margin-top: 5rem;
-  }
-
-  .xl\:mt-40 {
-    margin-top: 10rem;
-  }
-
-  .xl\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
-  .xl\:-mt-16 {
-    margin-top: -4rem;
-  }
-
-  .xl\:-mt-20 {
-    margin-top: -5rem;
   }
 
   .xl\:block {

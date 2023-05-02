@@ -28,7 +28,7 @@
 }
 
 .nav__link {
-  @apply px-4 py-2 text-sm hover:text-blue-500;
+  @apply px-4 py-2  hover:text-blue-500;
 }
 
 .nav__toggle {
