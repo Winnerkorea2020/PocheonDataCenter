@@ -36,7 +36,7 @@
       rel="stylesheet"
     />
 
-    <title>GNB Data Center | GNB데이터센터</title>
+    <title>GNB Data Center | GNB 데이터센터</title>
   </head>
   <body class="bg-zinc-950">
     <!-- Header Section : Begin-->
@@ -216,6 +216,7 @@
       <section
         class="w-full px-5 xl:px-20 xl:h-screen py-60 xl:py-0 xl:mt-0"
         id="hero"
+        data-scroll
       >
         <div
           class="h-full xl:flex xl:flex-row xl:items-end xl:justify-between content-center w-full pb-44 xl:mx-auto xl:px-40"
@@ -241,10 +242,9 @@
       <section
         class="container mx-auto px-3 py-10 h-screen flex items-center"
         id="about"
-        data-scroll
       >
         <div class="lg:mx-72">
-          <p class="description-3">
+          <p class="description-3" data-scroll>
             엄청난 양의 데이터를 물리적인 서버에서 다룬다는 것은 비용과 시간이
             많이 들어갑니다. GNB 데이터센터는 이에 클라우드를 활용하여 가상의 IT
             서버를 늘려 효율적인 .
@@ -259,13 +259,12 @@
       <section
         class="container mx-auto px-3 py-10 h-screen flex items-center"
         id="about"
-        data-scroll
       >
-        <div class="lg:mx-72" data-scroll>
+        <div class="lg:mx-72">
           <div class="block">
-            <h2 class="text-5xl font-bold tracking-tighter">
-              데이터 센터의 이해
-            </h2>
+            <div>
+              <div class="title-2" data-scroll>데이터 센터의 이해</div>
+            </div>
             <div class="text-base font-thin xl:text-2xl">
               <div class="my-10 w-full">
                 <img
@@ -274,7 +273,7 @@
                   class="hidden xl:block object-cover w-full rounded-2xl"
                 />
               </div>
-              <p class="description-3 mt-10">
+              <p class="description-3 mt-10" data-scroll>
                 &nbsp; 오늘날의 세계는 통신케이블로 전체가 연결되어 있습니다.
                 모든 IT기반의 일들은 이러한 통신망과 데이터센터를 거치게 된다고
                 보시면 됩니다. 데이터센터는 = 서버, 즉, 컴퓨터를 위한 집이라고
@@ -283,7 +282,7 @@
                 물리적 기반이 되는 필수불가결한 시설이 데이터센터라 할 수
                 있겠습니다.
               </p>
-              <p class="description-3 mt-10">
+              <p class="description-3 mt-10" data-scroll>
                 &nbsp; 모든 카카오톡 서비스의 데이터는 통신망을 타고 카카오
                 데이터센터를 통해 전달되고 저장됩니다. 네이버 데이터센터도
                 마찬가지죠. 블로그를 통해 맛집을 통해 검색하고 정보를 입수 하는
@@ -299,8 +298,8 @@
       </section>
       <!-- Data Center About 2 : End -->
       <!-- Data Center About 3 - IMG : Begin -->
-      <section class="container mx-auto px-3 py-10 h-screen flex items-center">
-        <div class="xl:mx-72">
+      <section class="container mx-auto px-3 py-10 h-full flex items-center">
+        <div class="xl:mx-72 mt-20">
           <div class="h-full w-full">
             <div
               class="static grid grid-cols-1 lg:grid-cols-2 gap-y-3 lg:gap-x-3"
@@ -356,10 +355,12 @@
       <!-- Data Center About 3 - IMG : End -->
 
       <!-- Data Center Type : Begin -->
-      <section class="container mx-auto px-3 py-10 h-screen flex items-center">
-        <div class="xl:mx-72">
+      <section
+        class="container mx-auto px-3 py-10 xl:h-screen flex items-center"
+      >
+        <div class="xl:mx-72 mt-20">
           <div class="xl:flex xl:items-center xl:h-full">
-            <div class="">
+            <div class="" data-scroll>
               <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
                 <!-- ITEM 1 -->
                 <div
@@ -433,7 +434,7 @@
       <section class="container mx-auto px-3 py-10 h-screen flex items-center">
         <div class="lg:mx-72">
           <div class="my-20 text-3xl font-thin">
-            <p class="description-3">
+            <p class="description-3" data-scroll>
               &nbsp; 기업이나 정부 등 자체사용을 목적으로 하는 자사형
               데이터센터와 수익을 창출하고자 하는 인터넷 데이터센터(IDC)로
               구분지을 수 있는데요. 자사 데이터 센터는 정보의 안전한 보관이
@@ -446,20 +447,19 @@
       <!-- Data Center 1 : End -->
 
       <section
-        class="container mx-auto px-3 py-10 h-screen flex items-center"
+        class="container mx-auto px-3 py-10 h-full flex items-center"
         id="about"
-        data-scroll
       >
-        <div class="lg:mx-72" data-scroll>
+        <div class="lg:mx-72 mt-20">
           <div class="">
-            <div class="w-full">
+            <div class="w-full" data-scroll>
               <div class="">
                 <div class="w-full rounded-lg">
                   <div class="title-1">자사데이터센터(EDC)</div>
                   <p class="description-1">Enterprise Data Center</p>
                 </div>
               </div>
-              <div class="py-10">
+              <div class="py-10" data-scroll>
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
                   <!-- ITEM 1 -->
                   <div class="text-xl w-full">
@@ -503,9 +503,11 @@
                 </div>
               </div>
             </div>
+          </div>
 
+          <div>
             <div class="">
-              <p class="description-3 mt-12">
+              <p class="description-3 mt-12" data-scroll>
                 &nbsp; 메인센터를 평상시에 운영하면서 재해 복구 센터 DR센터도
                 실시간으로 동일하게 미러링됩니다. 메인센터가 혹시 정상적인
                 기능을 하지 못할 시에 일정 거리에 위치한 DR센터로 이동하여
@@ -514,7 +516,7 @@
                 됩니다. 이러한 정보의 보관이 가장 중요할 정도로 안정성을
                 최우선으로 운영하는 센터가 금융권 데이터센터라 할 수 있습니다.
               </p>
-              <p class="description-3 mt-12">
+              <p class="description-3 mt-12" data-scroll>
                 &nbsp; 기반시설은 일반적으로 전력 및 통신을 공급하는 전기실 UPS
                 및 배터리실, 그리고 발전기 등과 기계실, 항온항습기, 냉동기 등의
                 기계설비로 구성이 되며 이 전체를 운영하는 종합상황실, 네트워크
@@ -526,15 +528,15 @@
       </section>
 
       <!-- Infra : Begin -->
-      <section class="container mx-auto px-3 py-10 h-screen flex items-center">
-        <div class="lg:mx-72">
-          <div class="py-5">
+      <section class="container mx-auto px-3 py-10 h-full flex items-center">
+        <div class="lg:mx-72 mt-20">
+          <div class="py-5" data-scroll>
             <div class="title-1">인터넷데이터센터(IDC)</div>
             <p class="description-1">Internet Data Center</p>
           </div>
           <div class="grid grid-cols-4 lg:grid-cols-2 gap-5">
             <div class="w-full">
-              <div class="relative w-full h-72">
+              <div class="relative w-full h-72" data-scroll>
                 <h2 class="absolute top-2 left-2 tracking-tighter text-lg">
                   KT Data Center
                 </h2>
@@ -545,7 +547,7 @@
                 />
               </div>
             </div>
-            <div class="relative w-full h-72">
+            <div class="relative w-full h-72" data-scroll>
               <h2 class="absolute top-2 left-2 tracking-tighter text-lg">
                 LG Data Center
               </h2>
@@ -555,7 +557,7 @@
                 class="object-cover object-center w-full h-full"
               />
             </div>
-            <div class="relative w-full h-72">
+            <div class="relative w-full h-72" data-scroll>
               <h2 class="absolute top-2 left-2 tracking-tighter text-lg">
                 SK Data Center
               </h2>
@@ -565,7 +567,7 @@
                 class="object-cover object-center w-full h-full"
               />
             </div>
-            <div class="relative w-full h-72">
+            <div class="relative w-full h-72" data-scroll>
               <h2 class="absolute top-2 left-2 tracking-tighter text-lg">
                 네이버데이터센터
               </h2>
@@ -576,22 +578,26 @@
               />
             </div>
           </div>
-          <p class="description-3 text-center">국내외 데이터센터 모습</p>
-          <p class="description-3">
-            인터넷 데이터센터(IDC) 는 수많은 정보량의 이동, 수익을 내는 것이
-            주목적으로 수익성과 효율성이 중요한 특성을 가지고 있습니다.KT,
-            LGU+같은 통신사업자의 데이터센터 카카오, 네이버같은 기업의
-            데이터센터 들이 그러한 대상이 됩니다.
-          </p>
+          <div data-scroll>
+            <p class="description-2 text-center">국내외 데이터센터 모습</p>
+          </div>
+          <div class="mt-10">
+            <p class="description-3" data-scroll>
+              인터넷 데이터센터(IDC) 는 수많은 정보량의 이동, 수익을 내는 것이
+              주목적으로 수익성과 효율성이 중요한 특성을 가지고 있습니다.KT,
+              LGU+같은 통신사업자의 데이터센터 카카오, 네이버같은 기업의
+              데이터센터 들이 그러한 대상이 됩니다.
+            </p>
+          </div>
         </div>
       </section>
       <!-- Infra : END -->
 
       <!-- Infra : Begin -->
-      <section class="container mx-auto px-3 py-10 h-screen flex items-center">
-        <div class="lg:mx-72">
+      <section class="container mx-auto px-3 py-10 h-full flex items-center">
+        <div class="lg:mx-72 mt-40">
           <div class="w-full grid lg:grid-cols-12 gap-5">
-            <div class="lg:col-span-5">
+            <div class="lg:col-span-5" data-scroll>
               <div class="h-full w-full rounded-xl">
                 <img
                   src="./assets/img/img-server_01.jpg"
@@ -607,8 +613,8 @@
                   랙에 다수의 <br />
                   서버들이 설치됨
                 </div>
-                <div class="mt-10">
-                  <div class="title-3">1. 고집적, 고밀도화</div>
+                <div class="mt-10" data-scroll>
+                  <div class="title-4">1. 고집적, 고밀도화</div>
                   <div class="mt-3">
                     <ul class="description-3">
                       <li>전력부하밀도=1개의 랙이 사용하는 전력량(kw/랙)</li>
@@ -622,8 +628,8 @@
                 </div>
               </div>
               <div class="">
-                <div class="mt-3">
-                  <div class="title-3">2. 대형화 추세</div>
+                <div class="mt-3" data-scroll>
+                  <div class="title-4">2. 대형화 추세</div>
                   <div>
                     <ul class="description-3">
                       <li>
@@ -641,7 +647,7 @@
               </div>
             </div>
           </div>
-          <div class="mt-10">
+          <div class="mt-10" data-scroll>
             <p class="description-3">
               기반시설은 일반적으로 전력 및 통신을 공급하는 전기실 UPS 및
               배터리실, 그리고 발전기 등과 기계실, 항온항습기, 냉동기 등의
@@ -655,12 +661,12 @@
 
       <!-- Infra Descripition : Begin -->
       <section class="container mx-auto px-3 py-10 h-full flex items-center">
-        <div class="lg:mx-72">
-          <div class="">
+        <div class="lg:mx-72 mt-20">
+          <div class="" data-scroll>
             <div class="py-10">
               <h2 class="title-1">중요한 인프라는 충분한 전력</h2>
             </div>
-            <div class="">
+            <div class="" data-scroll>
               <div class="grid grid-cols1 lg:grid-cols-2 gap-3 xl:gap-y-10">
                 <!-- ITEM 1 -->
                 <div>
@@ -876,21 +882,7 @@
     <!-- Flow Bite : Begin-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
     <!-- Flow Bite : End-->
-    <script>
-      const nav = document.querySelector(".nav");
-      const navMenu = document.querySelector(".nav__menu");
-      const navToggle = document.querySelector(".nav-toggle");
-      const navClose = document.querySelector(".nav__close");
 
-      navToggle.addEventListener("click", function () {
-        navMenu.classList.add("r");
-        navMenu.classList.remove("hidden");
-      });
-      navClose.addEventListener("click", function () {
-        navMenu.classList.remove("block");
-        navMenu.classList.add("hidden");
-      });
-    </script>
     <script>
       ScrollOut({
         cssProps: {
@@ -899,5 +891,6 @@
         },
       });
     </script>
+    <script src="./assets/js/nav.js"></script>
   </body>
 </html>

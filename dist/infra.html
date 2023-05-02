@@ -28,7 +28,7 @@
       rel="stylesheet"
     />
 
-    <title>GNB Data Center | GNB데이터센터</title>
+    <title>GNB Data Center | GNB 데이터센터</title>
   </head>
   <body class="bg-zinc-950">
     <!-- Header Section : Begin-->
@@ -741,21 +741,7 @@
     <!-- Flow Bite : Begin-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
     <!-- Flow Bite : End-->
-    <script>
-      const nav = document.querySelector(".nav");
-      const navMenu = document.querySelector(".nav__menu");
-      const navToggle = document.querySelector(".nav-toggle");
-      const navClose = document.querySelector(".nav__close");
 
-      navToggle.addEventListener("click", function () {
-        navMenu.classList.add("r");
-        navMenu.classList.remove("hidden");
-      });
-      navClose.addEventListener("click", function () {
-        navMenu.classList.remove("block");
-        navMenu.classList.add("hidden");
-      });
-    </script>
     <script>
       ScrollOut({
         cssProps: {
@@ -764,5 +750,6 @@
         },
       });
     </script>
+    <script src="./assets/js/nav.js"></script>
   </body>
 </html>
