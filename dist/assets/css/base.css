@@ -843,6 +843,10 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -1350,10 +1354,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.opacity-0 {
-  opacity: 0;
 }
 
 .opacity-40 {
@@ -2138,7 +2138,7 @@ video {
 }
 
 .img__full--rounded {
-  height: 24rem;
+  height: 18rem;
   width: 100%;
   border-collapse: collapse;
   border-radius: 0.5rem;
@@ -2162,6 +2162,16 @@ video {
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
+}
+
+.img-flag {
+  margin-right: 0.5rem;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.img-flag__nation {
+  margin-left: 0.75rem;
 }
 
 [data-scroll] {
@@ -2294,7 +2304,7 @@ body {
 
 .El__wrapper {
   display: flex;
-  width: 400vw;
+  width: 320vw;
   height: 100vh;
 }
 
@@ -2312,8 +2322,8 @@ body {
 }
 
 .El__content {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   padding: 10rem;
 }
 
@@ -2356,6 +2366,11 @@ body {
     font-size: 3rem;
     line-height: 1;
   }
+}
+
+.hover\:bg-gray-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
 .hover\:font-semibold:hover {
@@ -2488,6 +2503,14 @@ body {
     grid-column: span 4 / span 4;
   }
 
+  .lg\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .lg\:col-span-7 {
+    grid-column: span 7 / span 7;
+  }
+
   .lg\:col-span-8 {
     grid-column: span 8 / span 8;
   }
@@ -2500,6 +2523,11 @@ body {
   .lg\:mx-48 {
     margin-left: 12rem;
     margin-right: 12rem;
+  }
+
+  .lg\:mx-72 {
+    margin-left: 18rem;
+    margin-right: 18rem;
   }
 
   .lg\:my-8 {
@@ -2683,8 +2711,25 @@ body {
     margin-right: 18rem;
   }
 
+  .xl\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .xl\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
+  .xl\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
   .xl\:mt-0 {
     margin-top: 0px;
+  }
+
+  .xl\:mt-20 {
+    margin-top: 5rem;
   }
 
   .xl\:block {
@@ -2790,9 +2835,18 @@ body {
     padding-right: 5rem;
   }
 
+  .xl\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
   .xl\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .xl\:pt-20 {
+    padding-top: 5rem;
   }
 
   .xl\:text-2xl {

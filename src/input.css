@@ -59,7 +59,7 @@ body {
 }
 .El__wrapper {
   display: flex;
-  width: 400vw;
+  width: 320vw;
   height: 100vh;
 }
 
@@ -71,8 +71,8 @@ body {
 }
 
 .El__content {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
 }
 
 .El__content {

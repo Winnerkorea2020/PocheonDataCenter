@@ -1,3 +1,10 @@
 .img__full--rounded {
-  @apply w-full h-96 object-center object-cover rounded-lg lg:rounded-none border border-collapse border-gray-700 shadow-lg  lg:border-none lg:shadow-none;
+  @apply w-full h-72 object-center object-cover rounded-lg lg:rounded-none border border-collapse border-gray-700 shadow-lg  lg:border-none lg:shadow-none;
+}
+.img-flag {
+  @apply w-5 h-5 mr-2;
+}
+
+.img-flag__nation {
+  @apply ml-3;
 }
