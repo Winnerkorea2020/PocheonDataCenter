@@ -4,32 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="./assets/css/base.css" />
-    <!-- Icon Css -->
-
-    <!-- FlowBite  -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"
-      rel="stylesheet"
-    />
-
     <!-- ICONS CSS -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-
-    <!-- Swiper JS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-
-    <!-- Animation On Scroll  -->
-    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
-
-    <!-- Swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.bunny.net" />
@@ -38,7 +17,15 @@
       rel="stylesheet"
     />
 
-    <title>GNB Data Center | GNB 데이터센터</title>
+    <title>GNB Data Center | Home</title>
+    <script defer src="./assets/js/index_bundle.js"></script>
+    <script defer src="./assets/js/nav_bundle.js"></script>
+    <script defer src="./assets/js/flowbite_bundle.js"></script>
+    <script defer src="./assets/js/scrollout_bundle.js"></script>
+    <script defer src="./assets/js/swiper_bundle.js"></script>
+    <script defer src="./assets/js/gasp_bundle.js"></script>
+    <script defer src="./assets/js/chartjs_bundle.js"></script>
+    <link href="./assets/css/base.css" rel="stylesheet" />
   </head>
   <body class="bg-zinc-950">
     <!-- Header Section : Begin-->
@@ -1115,10 +1102,14 @@
     </footer>
     <!-- Footer Section : End -->
 
+    <!-- Chart JS -->
+    <section class="container mx-auto px-3 py-10 h-screen">
+      <div class="xl:mx-72">
+        <canvas id="myChart"></canvas>
+      </div>
+    </section>
+
     <!-- Javascript -->
-    <!-- Flow Bite : Begin-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
-    <!-- Flow Bite : End-->
 
     <!-- Swiper JS : End -->
     <!--  -->
@@ -1129,56 +1120,6 @@
     <!--  -->
 
     <!-- Slider Parallax Scrolling -->
-    <script>
-      const ease = window.Power4.easeInOut;
-      const el = document.querySelector("#el");
-      const wrapper = document.querySelector("#wrapper");
-      const slides = el.querySelectorAll(".El__slide");
-      const amount = slides.length;
-      const controller = new window.ScrollMagic.Controller();
-      const horizontalMovement = new window.TimelineMax();
-
-      const controller2 = new window.ScrollMagic.Controller({
-        vertical: false,
-        refreshInterval: 1,
-      });
-
-      horizontalMovement.add([
-        window.TweenMax.to(wrapper, 1, {
-          x: `-${(100 / amount) * (amount - 1)}%`,
-        }),
-      ]);
-
-      new window.ScrollMagic.Scene({
-        triggerElement: el,
-        triggerHook: "onLeave",
-        duration: `${amount * 100}%`,
-      })
-        .setPin(el)
-        .setTween(horizontalMovement)
-        .addTo(controller);
-
-      // slides.forEach((item, index) => {
-      //   const title = item.querySelector("h1");
-      //   const subtitle = item.querySelector("h2");
-      //   const tween = new window.TimelineMax();
-      //   tween
-      //     .fromTo(title, 1, { x: 0 }, { x: 500 }, 0)
-      //     .fromTo(subtitle, 1, { x: 600 }, { x: 500 }, 0);
-      //   new window.ScrollMagic.Scene({
-      //     triggerElement: item,
-      //     triggerHook: 1,
-      //     duration: "100%",
-      //   })
-      //     .setTween(tween)
-      //     .addTo(controller2);
-      // });
-    </script>
-
-    <!-- Animation Scroll  -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-    <script src="./assets/js/scrollOut.js"></script>
-    <script src="./assets/js/nav.js"></script>
+    <script></script>
   </body>
 </html>

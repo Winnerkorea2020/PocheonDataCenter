@@ -4,14 +4,21 @@ const path = require("path");
 const autoprefixer = require("autoprefixer");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const miniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "development",
   entry: {
     index: "./src/assets/js/main.js",
+    nav: "./src/assets/js/nav.js",
+    flowbite: "./src/assets/js/flowbite.js",
+    scrollout: "./src/assets/js/scrollOut.js",
+    swiper: "./src/assets/js/swiper.js",
+    gasp: "./src/assets/js/gasp.js",
+    chartjs: "./src/assets/js/chart.js",
   },
   output: {
-    filename: "[name]_bundle.js",
+    filename: "./assets/js/[name]_bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
   devServer: {
@@ -20,8 +27,39 @@ module.exports = {
     hot: true,
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: "./src/index.html" }),
-    new miniCssExtractPlugin(),
+    new HtmlWebpackPlugin({
+      title: "GNB Data Center | Home",
+      template: "./src/index.html",
+    }),
+    new HtmlWebpackPlugin({
+      title: "GNB Data Center | Service",
+      filename: "service.html",
+      template: "./src/service.html",
+    }),
+    new HtmlWebpackPlugin({
+      title: "GNB Data Center | Data Center",
+      filename: "datacenter.html",
+      template: "./src/datacenter.html",
+    }),
+    new HtmlWebpackPlugin({
+      title: "GNB Data Center | Infra",
+      filename: "infra.html",
+      template: "./src/infra.html",
+    }),
+    new HtmlWebpackPlugin({
+      title: "GNB Data Center | Trend",
+      filename: "trending.html",
+      template: "./src/trending.html",
+    }),
+
+    new miniCssExtractPlugin({ filename: "./assets/css/base.css" }),
+
+    new CopyPlugin({
+      patterns: [
+        { from: "./src/assets/img", to: "./assets/img" },
+        { from: "./src/assets/flag", to: "./assets/flag" },
+      ],
+    }),
   ],
   module: {
     rules: [
@@ -44,10 +82,6 @@ module.exports = {
                 plugins: () => [autoprefixer],
               },
             },
-          },
-          {
-            // Loads a SASS/SCSS file and compiles it to CSS
-            loader: "sass-loader",
           },
         ],
       },
