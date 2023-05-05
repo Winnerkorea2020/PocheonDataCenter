@@ -15,7 +15,6 @@ module.exports = {
     scrollout: "./src/assets/js/scrollOut.js",
     swiper: "./src/assets/js/swiper.js",
     gasp: "./src/assets/js/gasp.js",
-    chartjs: "./src/assets/js/chart.js",
   },
   output: {
     filename: "./assets/js/[name]_bundle.js",

@@ -1,6 +1,6 @@
 import Chart from "chart.js/auto";
 
-const ctx = document.getElementById("myChart");
+const ctx = document.getElementById("serviceMyChart");
 
 new Chart(ctx, {
   type: "bar",
@@ -37,21 +37,14 @@ new Chart(ctx, {
       legend: {
         display: false,
       },
-
-      title: {
-        display: true,
-        text: "국내 퍼블릭 클라우드 소프투웨어 시장 전망",
-        font: {
-          weight: 100,
-          size: 15,
-          lineHeight: 1.5,
-        },
-        color: "white",
-      },
     },
     scales: {
       y: {
+        ticks: { color: "white", beginAtZero: true },
         beginAtZero: true,
+      },
+      x: {
+        ticks: { color: "white", beginAtZero: true },
       },
     },
   },
