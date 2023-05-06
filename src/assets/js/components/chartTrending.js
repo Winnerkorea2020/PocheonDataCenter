@@ -121,6 +121,12 @@ new Chart(tredingMychart2, {
         position: top,
       },
     },
+    animations: {
+      tension: {
+        duration: 10000,
+        easing: "easeInQuad",
+      },
+    },
     scales: {
       y: {
         ticks: { color: "white", beginAtZero: true },
