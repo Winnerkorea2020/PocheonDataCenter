@@ -1,7 +1,7 @@
 /* Header CSS */
 /* Nav */
 .header {
-  @apply fixed top-0 left-0 right-0 bottom-0 w-full px-3 xl:py-3 xl:px-10 z-50 xl:h-16;
+  @apply fixed top-0 left-0 right-0 bottom-0 w-full px-3 xl:py-6 xl:px-10 z-50 xl:h-20;
 }
 .nav {
   @apply flex justify-between items-center relative py-3 xl:py-0 h-fit;
@@ -12,7 +12,7 @@
 }
 
 .nav__logo--title {
-  @apply block text-base font-semibold xl:font-mono xl:text-2xl text-gray-300 tracking-tighter;
+  @apply block text-lg font-semibold  xl:font-mono xl:text-2xl text-gray-300 tracking-tighter;
 }
 
 .nav__logo--description {
@@ -32,5 +32,5 @@
 }
 
 .nav__toggle {
-  @apply block xl:hidden;
+  @apply block text-2xl xl:hidden;
 }

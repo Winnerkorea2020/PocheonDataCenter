@@ -1509,9 +1509,9 @@ video {
 
 @media (min-width: 1280px) {
   .header {
-    height: 4rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    height: 5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
@@ -1541,8 +1541,8 @@ video {
 
 .nav__logo--title {
   display: block;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   font-weight: 600;
   letter-spacing: -0.05em;
   --tw-text-opacity: 1;
@@ -1647,6 +1647,8 @@ video {
 
 .nav__toggle {
   display: block;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 @media (min-width: 1280px) {
@@ -1656,6 +1658,7 @@ video {
 }
 
 .footer {
+  margin-top: 16rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 3rem;
@@ -2109,6 +2112,27 @@ video {
   .description-3 {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+}
+
+.description-4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 100;
+  letter-spacing: -0.05em;
+}
+
+@media (min-width: 1024px) {
+  .description-4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .description-4 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -2952,6 +2976,11 @@ body {
   .xl\:px-40 {
     padding-left: 10rem;
     padding-right: 10rem;
+  }
+
+  .xl\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .xl\:py-0 {

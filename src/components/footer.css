@@ -1,5 +1,5 @@
 .footer {
-  @apply pt-12 px-4 pb-10;
+  @apply mt-64 pt-12 px-4 pb-10;
 }
 
 .footer__title {

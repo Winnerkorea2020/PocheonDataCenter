@@ -1512,9 +1512,9 @@ video {
 
 @media (min-width: 1280px) {
   .header {
-    height: 4rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    height: 5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
@@ -1544,8 +1544,8 @@ video {
 
 .nav__logo--title {
   display: block;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   font-weight: 600;
   letter-spacing: -0.05em;
   --tw-text-opacity: 1;
@@ -1650,6 +1650,8 @@ video {
 
 .nav__toggle {
   display: block;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 @media (min-width: 1280px) {
@@ -1659,6 +1661,7 @@ video {
 }
 
 .footer {
+  margin-top: 16rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 3rem;
@@ -2112,6 +2115,27 @@ video {
   .description-3 {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+}
+
+.description-4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 100;
+  letter-spacing: -0.05em;
+}
+
+@media (min-width: 1024px) {
+  .description-4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .description-4 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -2957,6 +2981,11 @@ body {
     padding-right: 10rem;
   }
 
+  .xl\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .xl\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -3005,7 +3034,7 @@ body {
 /* Header CSS */
 /* Nav */
 .header {
-  @apply fixed top-0 left-0 right-0 bottom-0 w-full px-3 xl:py-3 xl:px-10 z-50 xl:h-16;
+  @apply fixed top-0 left-0 right-0 bottom-0 w-full px-3 xl:py-6 xl:px-10 z-50 xl:h-20;
 }
 .nav {
   @apply flex justify-between items-center relative py-3 xl:py-0 h-fit;
@@ -3016,7 +3045,7 @@ body {
 }
 
 .nav__logo--title {
-  @apply block text-base font-semibold xl:font-mono xl:text-2xl text-gray-300 tracking-tighter;
+  @apply block text-lg font-semibold  xl:font-mono xl:text-2xl text-gray-300 tracking-tighter;
 }
 
 .nav__logo--description {
@@ -3036,14 +3065,14 @@ body {
 }
 
 .nav__toggle {
-  @apply block xl:hidden;
+  @apply block text-2xl xl:hidden;
 }
 
 /*!*****************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/footer.css ***!
   \*****************************************************************************/
 .footer {
-  @apply pt-12 px-4 pb-10;
+  @apply mt-64 pt-12 px-4 pb-10;
 }
 
 .footer__title {
@@ -3144,6 +3173,10 @@ body {
 
 .description-3 {
   @apply text-lg lg:text-xl xl:text-2xl tracking-tighter font-thin;
+}
+
+.description-4 {
+  @apply text-xl lg:text-2xl xl:text-3xl tracking-tighter font-thin;
 }
 
 /*!*****************************************************************************!*\
@@ -5135,6 +5168,11 @@ body {
   .xl\:px-40 {
     padding-left: 10rem;
     padding-right: 10rem;
+  }
+
+  .xl\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .xl\:py-0 {
