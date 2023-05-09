@@ -1926,7 +1926,7 @@ video {
 
 .title-1 {
   display: block;
-  font-size: 1.875rem;
+  font-size: 2.25rem;
   font-weight: 500;
   line-height: 1.75rem;
 }
@@ -2056,44 +2056,37 @@ video {
 }
 
 .description-1 {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   font-weight: 200;
   letter-spacing: -0.05em;
 }
 
 @media (min-width: 1024px) {
   .description-1 {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .description-1 {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
+@media (min-width: 1280px) {
+  .description-1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
 .description-2 {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 100;
   letter-spacing: -0.05em;
 }
 
-@media (min-width: 1024px) {
-  .description-2 {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-}
-
 @media (min-width: 1280px) {
   .description-2 {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -3142,7 +3135,7 @@ body {
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/title.css ***!
   \****************************************************************************/
 .title-1 {
-  @apply block text-3xl md:text-5xl xl:text-7xl font-medium leading-7;
+  @apply block text-4xl md:text-5xl xl:text-7xl font-medium leading-7;
 }
 
 .title-2 {
@@ -3165,10 +3158,10 @@ body {
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/description.css ***!
   \**********************************************************************************/
 .description-1 {
-  @apply text-sm lg:text-base xl:text-xl tracking-tighter font-extralight;
+  @apply text-lg lg:text-xl xl:text-2xl tracking-tighter font-extralight;
 }
 .description-2 {
-  @apply text-base lg:text-lg xl:text-base tracking-tighter font-thin;
+  @apply text-sm xl:text-xl tracking-tighter font-thin;
 }
 
 .description-3 {
