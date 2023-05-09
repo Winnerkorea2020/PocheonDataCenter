@@ -1,5 +1,5 @@
 .title-1 {
-  @apply block text-3xl md:text-5xl xl:text-7xl font-medium leading-7;
+  @apply block text-4xl md:text-5xl xl:text-7xl font-medium leading-7;
 }
 
 .title-2 {
