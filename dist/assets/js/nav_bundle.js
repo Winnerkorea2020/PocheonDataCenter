@@ -15,7 +15,7 @@
   \******************************/
 /***/ (() => {
 
-eval("const nav = document.querySelector(\".nav\");\r\nconst navMenu = document.querySelector(\".nav__menu\");\r\n\r\nconst navToggle = document.querySelector(\".nav__toggle\");\r\nconst navClose = document.querySelector(\".nav__close\");\r\n\r\nnavToggle.addEventListener(\"click\", function () {\r\n  navMenu.classList.add(\"block\");\r\n  navMenu.classList.remove(\"hidden\");\r\n});\r\nnavClose.addEventListener(\"click\", function () {\r\n  navMenu.classList.remove(\"block\");\r\n  navMenu.classList.add(\"hidden\");\r\n});\r\n\n\n//# sourceURL=webpack://edu03/./src/assets/js/nav.js?");
+eval("const nav = document.querySelector(\".nav\");\nconst navMenu = document.querySelector(\".nav__menu\");\n\nconst navToggle = document.querySelector(\".nav__toggle\");\nconst navClose = document.querySelector(\".nav__close\");\n\nnavToggle.addEventListener(\"click\", function () {\n  navMenu.classList.add(\"block\");\n  navMenu.classList.remove(\"hidden\");\n});\nnavClose.addEventListener(\"click\", function () {\n  navMenu.classList.remove(\"block\");\n  navMenu.classList.add(\"hidden\");\n});\n\n\n//# sourceURL=webpack://edu03/./src/assets/js/nav.js?");
 
 /***/ })
 
